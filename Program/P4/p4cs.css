@@ -1,0 +1,30 @@
+.conten{
+    margin: 10px;
+}
+strong{
+    padding: 5px;
+    color: rgb(88, 49, 1);
+    font-size: 20px;
+}
+input{
+    font-size: large;
+    padding: 5px;
+}
+span{
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: lightgreen;
+}
+*{
+margin: 10px;
+}
+button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+}

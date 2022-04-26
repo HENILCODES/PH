@@ -1,0 +1,27 @@
+.reload{
+    border: 16px solid rgb(245, 243, 243);
+    border-radius: 50%;
+    border-top: 16px solid rgb(3, 207, 180);
+    border-bottom: 16px solid rgb(3, 207, 64);
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    animation: spin 1.5s linear infinite;
+}
+#reload_cont{
+    display: none;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+    padding: 10px;
+    font-size: 30px;
+}
+#reload_page{
+    margin-top: 220px;
+    text-align: center;
+}
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}

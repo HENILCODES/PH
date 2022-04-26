@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="File/Henil.ico" type="image">
+    <title> Log in / Henil Code</title>
+    <link href="CSS/register.css" rel="stylesheet">
+    <link href="CSS/alert.css" rel="stylesheet">
+    <script src="Log in-register/log.js"></script>
+    <script src="Log in-register/show.js"></script>
+</head>
+<div class="alert" id="alt">
+    <h2> HenilCode Says</h3>
+        <h4 id="error"> </h4>
+        <button onclick="ok()" id="ok"> Ok </button>
+        <button onclick="conti()" id="continue"> continue </button>
+</div>
+<a href="https://henilcodes.github.io/PH/" class="HC">Henil Code </a>
+
+<body>
+    <div class="header">
+        <h1 align="center"> Log in </h1>
+        <form name="Form1" autocomplete="off" method="post">
+            <strong> *Number </strong> <input type="text" class="user" name="Number" maxlength="10">
+            <strong> *Password </strong> <input type="password" class="user" id="pass" name="Password">
+            <input type="checkbox" onclick="check()"><i>Show Password</i>
+        </form>
+        <div class="reload" id="r"></div>
+        <input type="submit" class="log" value="Log in" onclick="Check()">
+        <h3> Need an Account <i class="bi bi-forward"></i><a href="register.html">Sign Up</a></h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body{
+	background: rgb(43, 40, 40);
+	
+}
+*{
+	padding:10px 5px 5px 5px;
+	margin:auto;
+}
+form{
+    background-color: gray;
+	padding:10px;
+	height:1000px;
+}
+.bt{
+	color:white;
+	font-size:29px;
+	background-color:brown;
+	padding-top:2px;
+	margin:10px; 
+	border-radius: 150px;
+	box-shadow: 0 5px #999;
+	
+}
+
+h4#MTH{
+	color:red;
+	text-align:center;
+	text-transform:uppercase;
+	text-shadow: 0 0 10px #fff;	
+	color:white;
+	background:darkmagenta;
+}
+.Table{
+	text-align:center; 
+	padding-bottom:30px;
+	box-shadow: -20px 17px 20px 15px lightgreen;
+	background:currentColor;
+	font-size:30px;
+	height:720px;
+	width:750px;
+	border:10px solid ;
+	border-color: blue yellow ;
+}
+
+#TNum:hover{
+	background-color:aqua;
+	color:black;
+} 
+#Mtans{
+	color:white;
+	background:linear-gradient(45deg, darkslategray, transparent);
+	border-radius:50px;
+}
+#TNum{
+	color:white;
+	background:black;
+	border:solid green;
+	font-size: 25px;
+	outline: none;
+	padding: 10px;
+	margin: 5px;
+}
+
+#nu{
+	color:white;
+	text-shadow: 0 0 20px blue;
+}

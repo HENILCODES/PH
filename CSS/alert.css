@@ -1,0 +1,68 @@
+.alert{
+    background-color: rgb(173, 63, 63);
+    box-shadow: 0 0 15px black;
+    text-align: center;
+    border-radius: 20px;
+    color: aliceblue;
+    width: 425px;
+    height: 175px;
+    opacity: 2px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50% , -50%);
+    transition: .5s;
+    display: none;
+}
+#continue{
+    display: none;
+}
+.alert h2{
+    margin: 10px;
+    font-size: 27px;
+    color: rgb(238, 255, 2);
+    padding: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 2px solid rgb(8, 8, 8);
+    border-radius: 10px;
+    text-shadow: 0 0 12px rgb(17, 17, 17);
+}
+.alert #error{
+    color: aliceblue;
+    font-size: 19px;
+    padding-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 2px solid rgb(23, 219, 203);
+    border-radius: 20px;
+    text-shadow: 0 0 10px black;
+}
+.alert button{
+    width: 120px;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px rgb(240, 239, 239);
+    outline: none;
+    border: 2px solid rgb(3, 255, 255);
+    color: rgb(98, 255, 83);
+    bottom: 10px;
+    font-size: 22px;
+    border-radius: 20px;
+    background-color: rgb(117, 8, 75);
+    transition: .5s;
+}
+.alert button:hover{
+    background-color: rgb(12, 209, 44);
+    color: rgb(177, 2, 2);
+    border: 2px solid rgb(189, 4, 4);
+    padding: 7px;
+    font-size: 18px;
+}
+.alert button:active{
+    box-shadow: 0 0 rgb(240, 239, 239);
+    background-color: red;
+    color: blanchedalmond;
+    transform: translateY(5px);
+}

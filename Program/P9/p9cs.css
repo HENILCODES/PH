@@ -1,0 +1,76 @@
+body {
+    background: rgb(56, 52, 52);
+}
+
+.login {
+    background-color: black;
+    width: 500px;
+    padding: 15px;
+    color: gold;
+    box-shadow: 0 0 7px 0 white;
+    margin: auto;
+    text-align: center;
+    border-radius: 33px;
+}
+
+.logo {
+    border-radius: 50px;
+    height: 50px;
+    font-size: 21px;
+    background: rgb(56, 12, 1);
+    position: relative;
+    cursor: pointer;
+    width: 200px;
+    color: antiquewhite;
+    border: 2px dotted rgb(199, 212, 10);
+    box-shadow: 0 0 30px 0 rgb(170, 233, 23);
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(10, 197, 10);
+}
+
+line {
+    font-size: 30px;
+}
+
+input {
+    color: aliceblue;
+    background: rgb(92, 74, 74);
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    margin: 15px;
+    font-size: 25px;
+}
+
+input:hover {
+    background-color: rgb(117, 30, 30);
+}
+
+.Log_In {
+    background: linear-gradient(225deg, rgb(73, 92, 5), rgb(43, 253, 218), rgb(199, 32, 115));
+    font-size: 30px;
+    padding: 7px;
+    border-radius: 20px;
+    width: 40%;
+    color: rgb(128, 6, 6);
+    border: 5px solid;
+    border-color: rgb(243, 93, 24);
+    margin-top: 30px;
+    box-shadow: 0 0 15px 0 white;
+    cursor: pointer;
+}
+
+.Log_In:hover {
+    background: linear-gradient(225deg, rgb(8, 202, 144), rgb(38, 0, 255), rgb(168, 85, 127));
+    color: aliceblue;
+}
+
+.Log_In:active,
+.logo:active {
+    transform: translateY(10px);
+    background: red;
+    color: azure;
+}

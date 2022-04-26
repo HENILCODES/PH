@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Henil Code</title>
+    <link rel="stylesheet" href="p2cs.css">
+    <script src="p2ja.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <h1> Log in </h1>
+        <form action="https://henilcodes.github.io/PH/" name="Form1" method="post" class="form">
+            <input type="text" name="Name" required placeholder="Enter Name" class="input"> <p class="eror">Name</p>
+            <input type="number" name="Number" required placeholder="Enter Number" class="input" onkeyup="Log_valid()"
+                onkeypress="Log_valid()">
+            <p id="Valid_number" class="eror">10 Number</p>
+            <input type="password" name="password_fild" required placeholder="Enter Password" class="input"
+                onkeyup="Log_valid()" onkeypress="Log_valid()">
+            <p id="valid_pass" class="eror"> Minimum 9 Digit </p>
+            <button id="logIn" type="submit" disabled> Log in </button>
+        </form>
+    </div>
+</body>
+</html>

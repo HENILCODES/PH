@@ -1,0 +1,30 @@
+    .main {
+        width: 35%;
+        margin: auto;
+    }
+    strong{
+        font-size: 20px;
+    }
+    input{
+        font-size: large;
+        padding: 4px;
+        font-weight: bold;
+    }
+    button{
+        border-radius: 10px;
+        font-size: large;
+        padding: 5px;
+        margin-left: 10px;
+    }
+    h1{
+        padding-bottom: 20px;
+        text-align: center;
+        color: rgb(2, 2, 75);
+        text-decoration: underline;
+    }
+    h2{
+        color: rgb(77, 0, 45);
+        border-radius: 10px;
+        background: rgb(74, 201, 95);
+        padding: 10px;
+    }

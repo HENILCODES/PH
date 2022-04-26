@@ -1,0 +1,63 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.main-bar{
+	background: rgb(0,100,0);
+	text-align:center;
+	width: 100%;
+}
+
+.main-bar ul{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+.main-bar ul li{
+	margin: 15px;
+	padding: 15px;
+}
+
+.main-bar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.home, .main-bar ul li:hover{
+	background: #2bab0d;
+	border-radius: 3px;
+}
+.chile_manu{
+display:none;
+}
+.main-bar ul li:hover .chile_manu{
+	display: block;
+	position: absolute;
+	background: rgb(0,100,0);
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.main-bar ul li:hover .chile_manu ul{
+	display: block;
+	margin: 10px;
+}
+.main-bar ul li:hover .chile_manu ul li{
+	width: 150px;
+	padding: 10px;
+	background: transparent;
+	border-radius:0;
+	text-align: left;
+}
+.main-bar ul li:hover .chile_manu ul li:last-child{
+	border: none;
+}
+.main-bar ul li:hover .chile_manu ul li a:hover{
+	color: red;
+}
+

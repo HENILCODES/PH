@@ -1,0 +1,149 @@
+.home{
+  background:lightgreen;
+  color:initial;
+  width:120px;
+  font-size:35px;
+  padding: 5px;
+  border-radius: 150px;
+  box-shadow: 0 5px #999; 
+}
+.home:hover{
+background: green;
+color:white;
+}
+.home:active{
+background:lightgreen;
+color:red;
+transform: translateY(16px);
+} 
+*{
+	padding:10px 5px 5px 5px;
+	margin:auto;
+}
+html{
+    background-color: #dc5764;
+}
+form{
+    background-color: gray;
+	padding:10px;
+	height:1000px;
+}
+
+.bt{
+	color:white;
+	font-size:29px;
+	background-color:brown;
+	padding-top:2px;
+	margin:10px; 
+	border-radius: 150px;
+	box-shadow: 0 5px #999;
+	
+}
+
+input{
+	color:white;
+	background:black;
+	border:solid green;
+}
+.bt:hover{
+	background:yellow;
+	color:black;
+}
+.bt:active{
+	transform: translateY(5px);
+	background-color:royalblue;
+	color:white;
+}
+
+input:hover{
+	background-color:aqua;
+	color:black;
+} 
+h4#MTH{
+	color:red;
+	text-align:center;
+	text-transform:uppercase;
+	text-shadow: 0 0 10px #fff;	
+	color:white;
+	background:darkmagenta;
+}
+h3{
+	text-align:center;
+	text-transform:uppercase;
+	text-shadow: 0 0 10px #fff;	
+	background:blueviolet;
+}
+.stringCheck{
+	background:darkseagreen;
+	width:720px;
+	text-align:center;
+	border:5px solid darkblue;
+	font-size:30px;
+	color:black; 
+	display:none;  
+	padding-bottom:30px;
+	box-shadow: -20px 17px 20px 15px skyblue;
+	padding:30px;
+}
+.Table{
+	text-align:center; 
+	padding-bottom:30px;
+	box-shadow: -20px 17px 20px 15px lightgreen;
+	background:currentColor;
+	font-size:30px;
+	height:720px;
+	width:750px;
+	border:10px solid ;
+	border-color: blue yellow ;
+	display:none;  
+}
+#nu{
+	color:white;
+}
+#Mtans{
+	color:white;
+	background:linear-gradient(45deg, darkslategray, transparent);
+	border-radius:50px;
+}
+.calculate{
+	padding-bottom:30px;
+	text-align:center; 
+	box-shadow: -20px 17px 20px 15px lightgreen;
+	background:pink;
+	font-size:30px;
+	height:600px;
+	width:720px;
+	border:5px solid red;
+	display:none;  
+}
+#ans{
+	color:red;
+	font-size:45px;
+}
+
+option{
+	background:darkred;
+	color:white;
+	font-size:35px;
+}
+#select{
+	display:flex;
+	text-align:center;
+	justify-content:center;
+	padding-top:25px;
+	padding-bottom:30px;
+}
+#sel{
+	display:flex;
+	text-align:center;
+	align-item:center;
+	border:8px solid;
+	border-color:red blue black pink;
+}
+.detail{
+	padding-top:30px;
+	background:black;
+	Color:white;
+	border-radius:30px;
+	text-shadow: 0 0 15px #fff;
+}

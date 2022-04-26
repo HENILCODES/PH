@@ -1,0 +1,45 @@
+.reload{
+    border: 16px solid rgb(245, 243, 243);
+    border-radius: 50%;
+    border-top: 16px solid rgb(224, 44, 12);
+    border-bottom: 16px solid rgb(190, 3, 207);
+    width: 120px;
+    height: 120px;
+    margin: auto;
+     animation: spin 1.5s linear infinite;
+}
+#reload_cont{
+    display: none;
+}
+button{
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid wheat;
+    background-color: brown;
+    color: white;
+}
+button:hover{
+    background-color: aqua;
+    color: black;
+}
+.btn{
+    text-align: center;
+    margin-top: 200px;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+    padding: 10px;
+    font-size: 30px;
+}
+#reload_page{
+    display: none;
+    margin-top: 220px;
+    text-align: center;
+}
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,131 @@
+.content{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.content h1{
+    color: #0e0250;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about_containt h3{
+    font-size: 19px;
+    padding: 15px;
+    color: #6d3202;
+}
+.about_containt{
+    box-shadow: 0 0 8px black;
+    border-radius: 20px;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.personal_detail{
+    display: flex;
+}
+img{
+    border-radius: 150px;  
+    box-shadow: 0 0 5px 0 rgb(58, 57, 57); 
+}
+.img h2{
+    color: #110392;
+    margin: 10px;
+    font-size: 25px;
+}
+.img h3{
+    color: crimson;
+    font-size: 20px;
+    margin: 8px;
+}
+.img h4{
+    font-size: 15px;
+    color: #38090f;
+    margin-bottom: 5px;
+}
+
+sup{
+    color: rgb(10, 48, 1);
+    font-size: 15px;
+}
+.social_Admin{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 12px 0 red;
+    padding: 15px;
+    border-radius: 30px;
+    bottom: 0;
+    top:20px;
+}
+.admin h1{
+    margin-top: 15px;
+}
+.admin h1 , .social h1{
+    text-align: center;
+    font-size: 35px;
+    color: #38090f;
+}
+.admin h3{
+    margin-left: 35px;
+    margin-top: 30px;
+    font-size: 25px;
+    color: rgb(7, 0, 71);
+}
+.social{
+    width: 50%;
+    padding: 10px;
+    background-color: #0f0f0f05;
+}
+.img{
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 black;
+    margin:auto;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.fa-instagram{
+    background: #f09433; 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    font-size: 50px;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: .5s;
+    color: white;
+    margin: 15px;
+    padding: 5px;
+}
+.fa-instagram:hover{
+    box-shadow: 0 0 15px 0 rgb(175, 61, 61);
+}
+.fa-wordpress:hover{
+    box-shadow:  0 0 15px 0 black;
+    border-radius: 50%;
+}
+.bi-facebook:hover{
+    box-shadow: 0 0 15px 0 rgb(41, 0, 221);
+}
+.bi-envelope{
+        font-size: 20px;
+    }
+    .fa-wordpress{
+        font-size: 50px;
+        cursor: pointer;
+        transition: .5s;
+        color: black;
+        margin: 15px;
+    }
+    .bi-facebook{
+        font-size: 50px;
+        cursor: pointer;
+        color: white;
+        border-radius: 60px;
+        background-color: rgb(21, 21, 163);
+        margin: 15px;
+        transition: .5s;
+        padding: 5px;
+    }

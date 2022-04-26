@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.main h1{
+    text-align: center;
+    font-size: 45px;
+    color: rgb(53, 0, 103);
+    margin-bottom: 30px;
+}
+.form {
+    width: 100%;
+    height: 100%;
+}
+.eror{
+    color: red;
+}
+.main {
+    background-color: rgb(177, 137, 216);
+    width: 300px;
+    padding: 30px;
+    height: 400px;
+    box-shadow: 0 0 20px 0 black;
+    margin: auto;
+}
+#logIn{
+    width: 50%;
+    cursor: not-allowed;
+    color: wheat;
+    margin: 40px 0 0 70px;
+    border: 1px solid red;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(153, 93, 194);
+}
+#logIn:hover{
+    width: 55%;
+}
+.input {
+    border: 2px solid rgb(24, 24, 141);
+    margin-left: 10px;
+    margin-top: 12px;
+    color: rgb(5, 0, 78);
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+}
+.input:hover{
+    border: 2px solid red;
+    padding: 13px;
+}

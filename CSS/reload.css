@@ -1,0 +1,33 @@
+.reload{
+    border: 7px dashed white;
+    border-top-color: rgb(52, 243, 52);
+    border-bottom-color: rgb(173, 23, 23);
+    position: absolute;
+    border-radius: 50%;
+    height: 140px;
+    width: 160px;
+    animation: spin 1.5s linear infinite;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+}
+#load .da{
+    color: rgb(15, 15, 15);
+    position: fixed;
+    top: 70%;
+    font-size: 27px;
+    left:45%;
+}
+#load{
+    left: 0;
+    position: fixed;
+    background-color: rgba(182, 182, 182, 0.918);
+    z-index: 9999999;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
