@@ -25,8 +25,7 @@ $(document).ready(function () {
 
         if (j == T2.length) {
             document.getElementById("auto_tp2").innerHTML += "<i class='bi bi-emoji-smile'></i> ";
-            document.getElementById("last").innerHTML = " ";
-            document.getElementById("TypeS").remove();
+            document.getElementById("last").remove();
         }
         setTimeout(type, 70);
     }
