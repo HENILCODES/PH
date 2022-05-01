@@ -27,7 +27,7 @@ body{
 
 .time span {
     font-family: 'Franklin Gothic Medium';
-    font-size: 35px;
+    font-size: 36px;
     color: white;
 }
 
@@ -39,7 +39,7 @@ body{
 }
 
 .timers p {
-    margin-top: 17px;
+    margin-top: 22px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 17px;
     color: #fff6ede8;
@@ -62,7 +62,7 @@ button{
     background-color: #4adf7e;
     cursor: pointer;
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 500;
     border: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     transition: .1s;

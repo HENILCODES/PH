@@ -4,17 +4,17 @@ var minutes =0;
 var hours = 0;
 function tick() {
     second++;
-    document.getElementById("second").innerHTML = second;
     if (second == 60) {
         second = 0;
         minutes +=1;
-        document.getElementById("minutes").innerHTML = minutes;
-        if (minutes == 60) {
-            minutes = 0;
-            document.getElementById("hours").innerHTML = hours;
-            hours += 1;
-        }
     }
+    if (minutes == 60) {
+        minutes =0;
+        hours += 1;
+    }
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("second").innerHTML = second;
 }
 var milS = 0;
 var MilId = -1;
