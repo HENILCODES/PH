@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Henil Code | Stop Watch</title>
+    <link rel="stylesheet" href="stop.css">
+    <link rel="icon" href="https://secure.gravatar.com/avatar/19cef1c37b12cb5d47ce71e9894dd14f?s=160&d=identicon&r=g">
+    <script src="stopClock.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="top">
+            <h1>Stop Watch</h1>
+        </div>
+        <div class="main">
+            <div class="button">
+                <button onclick="start()">Start</button>
+            </div>
+            <div class="timers">
+                <div class="time">
+                    <span id="hours">0</span>
+                    <p>Hours</p>
+                </div>
+                <div class="time">
+                    <span id="minutes">0</span>
+                    <p>Minutes</p>
+                </div>
+                <div class="time">
+                    <span id="second">0</span>
+                    <p>Second</p>
+                </div>
+                <div class="time">
+                    <span id="milisecond">0</span>
+                    <p>Millisecond</p>
+                </div>
+            </div>
+            <div class="button">
+                <button onclick="stop()">Stop</button>
+            </div>
+        </div>
+        <div class="button bot">
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+</body>
+
+</html>
