@@ -16,6 +16,8 @@ body, html {
 marquee{
     color: red;
     font-size: 15px;
+    position: relative;
+    z-index: -1;
     margin-bottom: 10px;
 }
 body{
