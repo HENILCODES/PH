@@ -54,6 +54,7 @@ a{
 }
 .main{
     display: flex;
+    flex-wrap: wrap;
     position: fixed;
     width: 100%;
     top: 0;

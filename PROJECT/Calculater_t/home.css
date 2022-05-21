@@ -1,11 +1,14 @@
 @media only screen and (max-width: 1000px){
     .header{   
-       zoom: 1.8;
+       zoom: 1.5;
     }
 }
 *{
     margin: 0;
     padding: 0;
+}
+.a{
+    background-color: rgb(72, 220, 72);
 }
 .main{
     box-shadow: 10px 10px 50px 1px black;
@@ -15,10 +18,11 @@
 }
 .header{
     margin: auto;
-    width: 500px;
     position: absolute;
     top: 45%;
     left: 50%;
+    max-width: 610px;
+    min-width: 600px;
     transform: translate(-50%,-50%);
 }
 body{
@@ -29,6 +33,7 @@ body{
     display: flex;
 }
 .key{
+    cursor: pointer;
     margin-bottom: 15px;
     width: 100px;
     margin-right: 7px;
@@ -39,7 +44,6 @@ body{
     box-shadow: 1px 1px 5px 2px black;
 }
 .key_Container,.opretion{
-    padding: 5px;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -58,8 +62,8 @@ body{
     text-align: right;
     margin-left: 9px;
     color: white;
-    background-color: black;
-    box-shadow: 0 0 5px 0 white;
+    background-color: #000;
+    box-shadow: 0 5px  #f8e3e333;
 }
 .key:hover{
     background-color: #ffff27;
