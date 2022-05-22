@@ -32,13 +32,15 @@ h2 {
 	border-radius: 15px;
 }
 
-h1 {
+.h1 {
 	border: 2px solid rgb(40, 7, 226);
 	border-radius: 15px;
-	font-size: 25px;
+	justify-content: space-between;
 	border-top-right-radius: 10px;
 	padding: 6px;
 	width: 80%;
+	font-size: 13px;
+	display: flex;
 	margin: auto;
 	margin-top: 35px;
 	box-shadow: 0 0 10px 0 red;
@@ -46,26 +48,29 @@ h1 {
 	background-color: rgb(251, 253, 251);
 	transition: .5s;
 }
-
-h1:hover {
+.h1 h1{
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.h1:hover{
 	color: rgb(245, 245, 245);
 	width: 83%;
 	background: rgb(111, 87, 148);
 }
 
-h1:active {
+.h1:active {
 	background: #04993d;
 	color: rgb(197, 3, 3)
 }
 
-h1:focus {
+.h1:focus {
 	width: 83%;
 }
 
 .date {
 	color: #2807e6;
-	font-size: 17px;
-	margin-left: 50px;
+	font-size: 20px;	
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
