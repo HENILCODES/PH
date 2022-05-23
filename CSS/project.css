@@ -34,7 +34,9 @@ button{
 	border: 2px ridge rgb(193, 236, 37);
     font-size: 22px;
 	margin-top: 35px;
+    font-family: cursive;
 	border-radius: 20px;
+    letter-spacing: 2;
     background: #f09433; 
     background: linear-gradient(20deg, green 83%, orangered 15%); 
     padding: 20px 10px 15px 110px;
