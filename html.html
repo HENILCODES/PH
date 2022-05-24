@@ -10,6 +10,7 @@
 	<script src="JS/reload.js"></script>
 	<script src="JS/ajax_code.js"></script>
 	<script src="JS/copyCodes.js"></script>
+	<script src="JS/menu.js"></script>
 
 	<link rel="stylesheet" href="CSS/reload.css">
 	<link href="CSS/manu.css" rel="stylesheet">
@@ -17,7 +18,7 @@
 </head>
 
 <body onload="preload()">
-	<div class="main">
+	<div class="main" id="menu">
 		<div class="logo"> <a href="https://henilcodes.github.io/PH/"> Henil code </a></div>
 		<div class="manus">
 			<a href="https://henilcodes.github.io/PH/"> <i class="fa fa-home"></i> Home</a>
@@ -47,7 +48,7 @@
 				<button class="go_top" onclick="scroll_Top()">Scroll <i class="bi bi-arrow-up-circle"></i> Up </button>
 			</div>
 			<div id="PH1" onclick="PH(1)" class="h1">
-				<h1> # 1 Audio & Video Tag use. <i class="bi bi-file-earmark-code"></i><i
+				<h1><a href="#PH1">#</a> 1 Audio & Video Tag use. <i class="bi bi-file-earmark-code"></i><i
 						class="bi bi-hand-index-thumb"></i> </h1><span class="date"><i
 						class="bi bi-calendar-check-fill">&nbsp;</i>28/Dec/2021 </span>
 			</div>
@@ -63,7 +64,7 @@
 					ondblclick="copyCode('DCS1')" readonly></textarea>
 			</div>
 			<div id="PH2" onclick="PH(2)" class="h1">
-				<h1> # 2 Create Log in Page With Validation. <i class="bi bi-file-earmark-code"></i><i
+				<h1><a href="#PH2">#</a> 2 Log in Page With Validation. <i class="bi bi-file-earmark-code"></i><i
 						class="bi bi-hand-index-thumb"></i></h1><span class="date"><i
 						class="bi bi-calendar-check-fill">&nbsp;</i>30/Dec/2021 </span>
 			</div>
@@ -83,7 +84,7 @@
 					ondblclick="copyCode('DJA2')" readonly></textarea>
 			</div>
 			<div id="PH3" onclick="PH(3)" class="h1">
-				<h1> # 3 Multiplication Table. <i class="bi bi-file-earmark-code"></i> <i <i
+				<h1><a href="#PH3">#</a> 3 Multiplication Table. <i class="bi bi-file-earmark-code"></i> <i <i
 						class="bi bi-hand-index-thumb"></i></h1><span class="date"><i
 						class="bi bi-calendar-check-fill">&nbsp;</i>10/Jan/2022 </span>
 			</div>
@@ -108,7 +109,7 @@
 					ondblclick="copyCode('DJQ3')" readonly></textarea>
 			</div>
 			<div id="PH4" onclick="PH(4)" class="h1">
-				<h1> # 4 Calculate Two Number. <i class="bi bi-file-earmark-code"></i><i
+				<h1><a href="#PH4">#</a> 4 Calculate Two Number. <i class="bi bi-file-earmark-code"></i><i
 						class="bi bi-hand-index-thumb"></i></h1><span class="date"><i
 						class="bi bi-calendar-check-fill">&nbsp;</i>6/Feb/2022 </span>
 			</div>
@@ -129,7 +130,7 @@
 					ondblclick="copyCode('DJA4')" readonly></textarea>
 			</div>
 			<div id="PH5" onclick="PH(5)" class="h1">
-				<h1> # 5 Find Factorial Of Number. <i class="bi bi-file-earmark-code"></i><i
+				<h1><a href="#PH5">#</a> 5 Find Factorial Of Number. <i class="bi bi-file-earmark-code"></i><i
 						class="bi bi-hand-index-thumb"></i></h1><span class="date"><i
 						class="bi bi-calendar-check-fill">&nbsp;</i>15/Feb/2022 </span>
 			</div>
@@ -151,7 +152,7 @@
 			</div>
 
 			<div id="PH6" onclick="PH(6)" class="h1">
-				<h1> # 6 Create Loading Page. <i class="bi bi-file-earmark-code"></i><i
+				<h1><a href="#PH6">#</a> 6 Loading Page. <i class="bi bi-file-earmark-code"></i><i
 						class="bi bi-hand-index-thumb"></i></h1><span class="date"><i
 						class="bi bi-calendar-check-fill">&nbsp;</i>20/Feb/2022 </span>
 			</div>
@@ -172,8 +173,7 @@
 					ondblclick="copyCode('DJA6')" readonly></textarea>
 			</div>
 			<div id="PH7" onclick="PH(7)" class="h1">
-
-				<h1> # 7 Create Simple Manu Bar. <i class="bi bi-file-earmark-code"></i><i
+				<h1><a href="#PH7">#</a> 7 Simple Manu Bar. <i class="bi bi-file-earmark-code"></i><i
 						class="bi bi-hand-index-thumb"></i></h1><span class="date"><i
 						class="bi bi-calendar-check-fill">&nbsp;</i>28/March/2022 </span>
 			</div>
@@ -190,7 +190,7 @@
 			</div>
 
 			<div id="PH8" onclick="PH(8)" class="h1">
-				<h1> # 8 Auto Type word effect. <i class="bi bi-file-earmark-code"></i><i
+				<h1><a href="#PH8">#</a> 8 Auto Type word effect. <i class="bi bi-file-earmark-code"></i><i
 						class="bi bi-hand-index-thumb"></i></h1><span class="date"><i
 						class="bi bi-calendar-check-fill">&nbsp;</i>3/April/2022 </span>
 			</div>
@@ -208,7 +208,7 @@
 					ondblclick="copyCode('DJA8')" readonly></textarea>
 			</div>
 			<div id="PH9" onclick="PH(9)" class="h1">
-				<h1> # 9 Create Log in Page With CSS. <i class="bi bi-file-earmark-code"></i><i
+				<h1><a href="#PH9">#</a> 9 Log in Page With CSS. <i class="bi bi-file-earmark-code"></i><i
 						class="bi bi-hand-index-thumb"></i></h1><span class="date"><i
 						class="bi bi-calendar-check-fill">&nbsp;</i>10/April/2022 </span>
 			</div>
