@@ -19,9 +19,9 @@
     left:45%;
 }
 #load{
+    background-color: rgba(182, 182, 182, 0.918);
     left: 0;
     position: fixed;
-    background-color: rgba(182, 182, 182, 0.918);
     z-index: 9999999;
     top: 0;
     height: 100%;
