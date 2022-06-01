@@ -58,7 +58,3 @@ function PH(j) {
     });
     console.log("Heading " + j + " Click");
 }
-
-//Scroll Top Bottom
-function scroll_Top() { $('html,body').animate({ scrollTop: 0 }, 1000); }
-function scroll_bottm() { $('html,body').animate({ scrollTop: 9999 }, 1000); }

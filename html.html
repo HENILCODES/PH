@@ -17,7 +17,7 @@
 	<link href="CSS/content.css" rel="stylesheet">
 </head>
 
-<body onload="preload()">
+<body>
 	<div class="main" id="menu">
 		<div class="logo"> <a href="https://henilcodes.github.io/PH/"> Henil code </a></div>
 		<div class="manus">
@@ -42,10 +42,10 @@
 			<div class="fold_bt">
 				<button class="fold">Collapse<i class="bi bi-arrows-collapse"></i></button>
 			</div>
-			<div class="Scrol_Top_Bottm">
-				<button class="go_bottm" onclick="scroll_bottm()">Scroll <i class="bi bi-arrow-down-circle"></i>
-					Down</button>
-				<button class="go_top" onclick="scroll_Top()">Scroll <i class="bi bi-arrow-up-circle"></i> Up </button>
+			<div class="Scrol_Top_Bottm" id="Scrol">
+				<!-- <a href="#DWN" class="go_bottm">Scroll <i class="bi bi-arrow-down-circle"></i>
+					Down</a> -->
+				<a href="#" class="go_top">Scroll <i class="bi bi-arrow-up-circle"></i> Up </a>
 			</div>
 			<div id="PH1" onclick="PH(1)" class="h1">
 				<h1><a href="#PH1">#</a> 1 Audio & Video Tag use. <i class="bi bi-file-earmark-code"></i><i
@@ -225,6 +225,7 @@
 			</div>
 		</div>
 	</div>
+	<i id="DWN"></i>
 </body>
 
 </html>

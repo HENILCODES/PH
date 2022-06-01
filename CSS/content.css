@@ -116,7 +116,9 @@ input[type=button]:active {
 	font-size: 20px;
 	border-bottom-left-radius: 20px;
 }
-
+#Scrol{
+	display: none;
+}
 .Scrol_Top_Bottm .go_top,
 .Scrol_Top_Bottm .go_bottm,
 .fold_bt .fold {
