@@ -1,45 +1,59 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("scrolbar.css");
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-body, html {
+
+body,
+html {
     cursor: default;
     height: 100%;
     scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-.marqu{
+
+.marqu {
     position: fixed;
 }
-marquee{
+
+marquee {
     color: red;
     font-size: 15px;
     position: relative;
     z-index: -1;
     margin-bottom: 10px;
 }
-body{
+
+body {
     background-image: url("backimg.jpg");
     background-position: center;
     background-size: cover;
     font-family: 'Times New Roman';
 }
-#act{
-    box-shadow: 0 0 10px 0 rgb(13, 3, 160); 
+
+#act {
+    box-shadow: 0 0 10px 0 rgb(13, 3, 160);
     background-color: rgb(1, 198, 247);
     color: black;
     border-radius: 25px;
-     border-top-left-radius: 5px;  
-    border-bottom-right-radius: 5px ;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
-a{
+
+a {
     text-decoration: none;
     font-weight: bold;
 }
-.main{
+
+.main {
     display: flex;
     flex-wrap: wrap;
     position: fixed;
@@ -53,7 +67,8 @@ a{
     z-index: 10;
     transition: 0.7s;
 }
-.main a{
+
+.main a {
     text-transform: uppercase;
     font-family: sans-serif;
     padding: 10px;
@@ -62,43 +77,49 @@ a{
     background-color: rgb(11, 3, 54);
     border-radius: 25px;
     font-size: 25px;
-    box-shadow: 0 0 10px 0 rgb(224, 9, 9); 
+    box-shadow: 0 0 10px 0 rgb(224, 9, 9);
     border-bottom-left-radius: 5px;
-    border-top-right-radius: 5px ;
+    border-top-right-radius: 5px;
 }
-.after_manu{
+
+.after_manu {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.logo{
+
+.logo {
     padding-left: 10px;
 }
-.logo a{
-    box-shadow: 0 0 10px 0 rgb(148, 1, 128); 
-	color: rgb(236, 231, 233);
+
+.logo a {
+    box-shadow: 0 0 10px 0 rgb(148, 1, 128);
+    color: rgb(236, 231, 233);
     font-family: 'Times New Roman';
     background-color: rgb(1, 153, 102);
 }
 
-.logo a:hover{
-    box-shadow: 0 0 10px 0 rgb(11, 25, 223); 
+.logo a:hover {
+    box-shadow: 0 0 10px 0 rgb(11, 25, 223);
     background: rgb(1, 198, 247);
     border-radius: 25px;
-    border-top-left-radius: 5px;  
+    border-top-left-radius: 5px;
     color: black;
-    border-bottom-right-radius: 5px ;
+    border-bottom-right-radius: 5px;
 }
-.logo a:active{
+
+.logo a:active {
     color: red;
 }
-.manus a:hover{
+
+.manus a:hover {
     color: black;
     background-color: rgb(1, 198, 247);
     border-radius: 28px;
-    box-shadow: 0 0 10px 0 rgb(13, 3, 160); 
-    border-top-left-radius: 5px;  
-    border-bottom-right-radius: 5px ;
+    box-shadow: 0 0 10px 0 rgb(13, 3, 160);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
-.manus a:active{
+
+.manus a:active {
     color: red;
 }
