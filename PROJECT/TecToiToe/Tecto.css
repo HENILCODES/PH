@@ -79,6 +79,7 @@ a:active{
     background: rgb(12, 12, 12);
     padding: 10px;
     color: aliceblue;
+    width : 100%;
 }
 button{
     background-color: rgb(248, 106, 11);
