@@ -18,13 +18,12 @@
 }
 
 h2 {
-	text-align: center;
 	text-shadow: 0 0 5px rgb(110, 107, 107);
 	background-color: rgb(206, 200, 116);
 	margin-top: 20px;
 	font-size: 16px;
 	color: #8b0606;
-	padding: 4px;
+	padding: 10px;
 	border-radius: 15px;
 }
 

@@ -20,6 +20,11 @@ body {
   color: red;
 }
 
+.HideImg {
+  opacity: 0;
+  position: fixed;
+}
+
 .wh {
   margin: 15px;
   text-align: right;

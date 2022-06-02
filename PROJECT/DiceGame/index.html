@@ -12,11 +12,18 @@
 </head>
 
 <body>
+<div class="HideImg">
+    <img src="Img/dice1.png" alt="">
+    <img src="Img/dice2.png" alt="">
+    <img src="Img/dice3.png" alt="">
+    <img src="Img/dice4.png" alt="">
+    <img src="Img/dice6.png" alt="">
+</div>
     <div class="top">
         <a href="https://henilcodes.github.io/PH/">Henil Code</a>
     </div>
     <div class="wh">
-        <a href="whatsapp://send?text=Dice Roll Game https://henilcodes.github.io/PH/PROJECT/Dice Game/" class="bi bi-whatsapp wh"></a>
+        <a href="whatsapp://send?text=Dice Roll Game https://henilcodes.github.io/PH/PROJECT/DiceGame/" class="bi bi-whatsapp wh"></a>
     </div>
     <div class="main">
         <div class="img" id="imgs">
@@ -34,12 +41,14 @@
         setTimeout(function () {
             var NumbD = Math.floor(Math.random() * 6) + 1;
             document.querySelector(".IMGD").setAttribute("src", "Img/dice" + NumbD + ".png");
-            console.log(NumbD);
             document.querySelector(".img").classList.remove("img_act");
         }, 2000);
         var DT =document.querySelector(".detail");
         DT.style.display = 'none';
     })
+    setTimeout(function(){
+        document.querySelector(".HideImg").remove();
+    },4000);
 </script>
 
 </html>

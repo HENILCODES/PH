@@ -1,63 +1,61 @@
-.projects{
+.projects {
     text-align: center;
 }
-h1{
+
+h1 {
     text-align: center;
-    text-shadow: 0 0 3px  rgb(107, 9, 9);
-   background-color: aliceblue;
-    width: 80%;
+    text-shadow: 0 0 3px rgb(107, 9, 9);
+    background-color: aliceblue;
     margin: auto;
     margin-top: 20px;
     padding: 3px;
+    padding: 10px 10px;
     color: #160952;
-    box-shadow: 0 0 5px 0 rgb(106, 207, 111);
+    box-shadow: 0 0 20px 0 rgb(12, 12, 12);
     border-radius: 10px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-span{
+
+.date {
     text-align: right;
-}
-.date{
+    font-size: 20px;
     color: rgb(2, 2, 61);
-    font-size: 14px;
-<<<<<<< HEAD
-    padding: 0;
-=======
-    Padding :0;
->>>>>>> 8f952d2af7506fa63232f43e54b1aa613e740b91
-    margin-left: 0;
-    text-shadow: 0 0 10px  #05afda;
+    text-shadow: 0 0 10px #05afda;
     font-weight: bold;
 }
-button{
+
+button {
     text-align: left;
     cursor: pointer;
     color: #f1f5f0;
-	border: 2px ridge rgb(193, 236, 37);
+    border: 2px ridge rgb(193, 236, 37);
     font-size: 22px;
-	margin-top: 35px;
+    margin-top: 35px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	border-radius: 20px;
+    border-radius: 20px;
     letter-spacing: 2;
-    background: #f09433; 
-    background: linear-gradient(20deg, green 83%, orangered 15%); 
+    background: #f09433;
+    background: linear-gradient(20deg, green 83%, orangered 15%);
     padding: 20px 10px 15px 110px;
-	box-shadow: 0 0 10px 0 rgb(21, 166, 192);
+    box-shadow: 0 0 10px 0 rgb(21, 166, 192);
     width: 60%;
-	background-color: rgb(65, 34, 241);
+    background-color: rgb(65, 34, 241);
     transition: .7s;
 }
+
 button:hover {
     color: rgb(50, 0, 83);
     font-weight: bold;
-    background: linear-gradient(20deg, rgb(59, 250, 107)67%,#c92508 15%); 
+    background: linear-gradient(20deg, rgb(59, 250, 107)67%, #c92508 15%);
     box-shadow: 0 0 20px 0 rgb(12, 12, 12);
     font-size: 23px;
     padding: 15px;
 }
-button:active{
-	background: #ca322c;
-	color: rgb(247, 246, 245);
+
+button:active {
+    background: #ca322c;
+    color: rgb(247, 246, 245);
 }
