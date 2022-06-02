@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game | Henil Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://secure.gravatar.com/avatar/19cef1c37b12cb5d47ce71e9894dd14f?s=160&d=identicon&r=g"
+        type="image">
+</head>
+
+<body>
+    <div class="top">
+        <a href="https://henilcodes.github.io/PH/">Henil Code</a>
+    </div>
+    <div class="wh">
+        <a href="whatsapp://send?text=Dice Roll Game https://henilcodes.github.io/PH/PROJECT/Dice Game/" class="bi bi-whatsapp wh"></a>
+    </div>
+    <div class="main">
+        <div class="img" id="imgs">
+            <img class="IMGD" src="Img/dice5.png">
+        </div>
+        <div class="detail">
+            <i class="bi bi-chevron-double-up"></i>
+            <h1>Start roll</h1>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("imgs").addEventListener("click", function () {
+        document.querySelector(".img").classList.add("img_act");
+        setTimeout(function () {
+            var NumbD = Math.floor(Math.random() * 6) + 1;
+            document.querySelector(".IMGD").setAttribute("src", "Img/dice" + NumbD + ".png");
+            console.log(NumbD);
+            document.querySelector(".img").classList.remove("img_act");
+        }, 2000);
+        var DT =document.querySelector(".detail");
+        DT.style.display = 'none';
+    })
+</script>
+
+</html>
