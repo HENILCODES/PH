@@ -22,6 +22,7 @@ span{
 .date{
     color: rgb(2, 2, 61);
     font-size: 14px;
+    Padding :0;
     margin-left: 0;
     text-shadow: 0 0 10px  #05afda;
     font-weight: bold;
