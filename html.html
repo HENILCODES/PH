@@ -10,7 +10,6 @@
 	<script src="JS/reload.js"></script>
 	<script src="JS/ajax_code.js"></script>
 	<script src="JS/copyCodes.js"></script>
-	<script src="JS/menu.js"></script>
 
 	<link rel="stylesheet" href="CSS/reload.css">
 	<link href="CSS/manu.css" rel="stylesheet">
@@ -47,6 +46,25 @@
 					Down</a> -->
 				<a href="#" class="go_top">Scroll <i class="bi bi-arrow-up-circle"></i> Up </a>
 			</div>
+			<script>
+				var prevSc = window.pageYOffset;
+				window.onscroll = function () {
+					var curnt = window.pageYOffset;
+					if (prevSc > curnt) {
+						document.getElementById("menu").style.top = "0";
+					} else {
+						document.getElementById("menu").style.top = "-90px";
+					}
+
+					if (curnt > 0) {
+						document.getElementById("Scrol").style.display = "none";
+					}
+					if (curnt > 250) {
+						document.getElementById("Scrol").style.display = "block";
+					}
+					prevSc = curnt;
+				}
+			</script>
 			<div id="PH1" onclick="PH(1)" class="h1">
 				<h1><a href="#PH1">#</a> 1 Audio & Video Tag use. <i class="bi bi-file-earmark-code"></i><i
 						class="bi bi-hand-index-thumb"></i> </h1><span class="date"><i

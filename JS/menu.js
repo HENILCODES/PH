@@ -4,14 +4,7 @@ window.onscroll = function () {
     if (prevSc > curnt) {
         document.getElementById("menu").style.top = "0";
     } else {
-        document.getElementById("menu").style.top = "-85px";
-    }
-
-    if (curnt > 0) {
-        document.getElementById("Scrol").style.display="none";
-    } 
-    if(curnt >250) {
-        document.getElementById("Scrol").style.display="block";
+        document.getElementById("menu").style.top = "-90px";
     }
     prevSc = curnt;
 }
