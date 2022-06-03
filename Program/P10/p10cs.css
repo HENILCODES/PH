@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1000px){
+    .header{   
+       zoom: 1.5;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.a{
+    background-color: rgb(72, 220, 72);
+}
+.main{
+    box-shadow: 10px 10px 50px 1px black;
+    border-radius: 20px;
+    padding: 20px 18px 10px 10px;
+    background-color: blueviolet;
+}
+.header{
+    margin: auto;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    max-width: 610px;
+    min-width: 600px;
+    transform: translate(-50%,-50%);
+}
+body{
+    background-color: rgb(103, 60, 147);
+}
+.keys{
+    margin-left: 12px;
+    display: flex;
+}
+.key{
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 100px;
+    margin-right: 7px;
+    height: 60px;
+    font-weight: bold;
+    transition: 0.2s;
+    font-size: 39px;
+    box-shadow: 1px 1px 5px 2px black;
+}
+.key_Container,.opretion{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.opretion button{
+    font-size: 40px;
+}
+#Answer{
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+    border-radius: 20px;
+    font-size: 35px;
+    padding: 7px;
+    width: 95%;
+    padding-right: 15px;
+    text-align: right;
+    margin-left: 9px;
+    color: white;
+    background-color: #000;
+    box-shadow: 0 5px  #f8e3e333;
+}
+.key:hover{
+    background-color: #ffff27;
+}
+.key:active{
+    border: none;
+    box-shadow: 0 0 5px 0 rgb(253, 252, 252);
+    background-color: #15c115;
+    color: white;
+}
