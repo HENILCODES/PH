@@ -1,100 +1,134 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     user-select: none;
     background-color: rgba(13, 13, 13, 0.975);
 }
-.bi{
+
+.bi {
     font-size: 40px;
-    &:active{
+
+    &:active {
         color: red;
     }
 }
-.HideImg{
+
+.HideImg {
     opacity: 0;
     position: fixed;
 }
-.wh{
-    margin:15px;
+
+.wh {
+    margin: 15px;
     text-align: right;
     color: white;
 }
-.main{
+
+.main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
-    .detail{
-        margin-top: 10px;
-        color: gold;
-        animation: Imdetail 3s infinite;
-        h1{
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 1.8rem;
+
+    .box {
+        margin-top: 30px;
+
+        .detail {
+            color: gold;
+            animation: Imdetail 3s infinite;
+
+            h1 {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 1.8rem;
+            }
+        }
+
+        #roll {
+            margin: auto;
+            border-radius: 10px;
+            color: gold;
+            box-shadow: inset 0 0 10px rgb(164, 30, 30);
+            border: 5px solid rgb(12, 223, 79);
+            padding: 2px;
+            width: 50px;
+            display: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
     }
 }
-@keyframes Imdetail{
-    0%{
+
+@keyframes Imdetail {
+    0% {
         transform: translateY(1px);
     }
-    50%{
+
+    50% {
         transform: translateY(15px);
     }
-    100%{
+
+    100% {
         transform: translateY(1px);
     }
 }
-.img{
+
+.img {
     border-radius: 20px;
     cursor: pointer;
     height: 110px;
     margin: auto;
     width: 110px;
     box-shadow: 10px 10px 40px 10px #04090b;
-    &:active{
+
+    &:active {
         box-shadow: 10px 10px 40px 10px rgb(40, 208, 255);
     }
 }
-.top{
+
+.top {
     background-color: #2a2a2a;
     padding: 20px;
     text-align: center;
     margin-bottom: 10px;
-    a{
+
+    a {
         font-size: 30px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         letter-spacing: 3px;
         border-radius: 10px;
         color: white;
         padding: 5px 10px;
-        &:active{
+
+        &:active {
             color: red;
             background-color: rgb(0, 244, 227);
         }
     }
 }
 
-.img_act{
+.img_act {
     box-shadow: 10px 10px 40px 10px rgb(7, 226, 51);
     animation: cliR .5s infinite;
 }
-@keyframes cliR{
-    0%{
+
+@keyframes cliR {
+    0% {
         box-shadow: 10px 10px 40px 10px rgb(231, 243, 12);
         transform: scaleX(0deg);
     }
-    50%{
+
+    50% {
         box-shadow: 10px 10px 40px 10px rgb(200, 39, 168);
         transform: rotate(360deg) rotate3d(1, 1, 0, 360deg) skew(30deg);
-        
+
     }
-    100%{
+
+    100% {
         transform: scale(0deg);
     }
 }
