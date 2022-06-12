@@ -1,51 +1,31 @@
-$(document).ready(function(){
-    $('#start').click(function(){
-        $('.main').slideDown(1500);
-        $('h1').slideUp(1000);
-        $('#start').slideUp(1000);
-        $('input').addClass('in');
-    })
-    $('#p1,#p2').click(function(){
-        $('h1').slideDown(1000);
-        $('#start').slideDown(1000);
-        $('.main').slideUp(1500);
-        $('input').removeClass('in');
-    })
-})
-var play1;
-var play2;
-function pval(){
-    play1 = document.getElementById('p1').value;
-    play2 = document.getElementById('p2').value;
-}
-var c = 1;
+var c = 0;
 function fil(elem) {
-    if (c <= 9) {
-        if (c % 2 != 0) {
+    if (c <=9) {
+        if (c % 2 == 0) {
             document.getElementById(elem.id).innerHTML = "O";
-            d = 1;
+            document.getElementById(elem.id).disabled = true;
+            document.getElementById(elem.id).classList.add("use");
         }
         else {
             document.getElementById(elem.id).innerHTML = "X";
-            d = 0;
+            document.getElementById(elem.id).disabled = true;
+            document.getElementById(elem.id).classList.add("use");
         }
         c++;
         if (CkeckWin()) {
-            if (d == 1) {
-                alert("win O "+ play1);
-            }else{
-                alert("win x "+ play2);
+            for (var i = 1; i <= 9; i++) {
+                document.getElementById("d" + i).disabled = true;
+                document.getElementById(elem.id).classList.add("use");
             }
-            reset();
         }
-    } else {
-        alert("Match is Draw");
-        reset();
     }
 }
 function reset() {
     for (var i = 1; i <= 9; i++) {
+        document.getElementById("d" + i).disabled = false;
+        document.getElementById("d" + i).classList.remove("use");
         document.getElementById("d" + i).innerHTML = "";
+        document.getElementById("d" + i).classList.remove("win");
     }
     c = 1;
 }
@@ -59,6 +39,9 @@ function CkeckWin() {
 function didvalue(id1, id2, id3) {
     if (getData(id1) != "" && getData(id2) != "" && getData(id3) != "" &&
         getData(id1) == getData(id2) && getData(id2) == getData(id3)) {
+        document.getElementById(id1).classList.add("win");
+        document.getElementById(id2).classList.add("win");
+        document.getElementById(id3).classList.add("win");
         return true;
     }
 }

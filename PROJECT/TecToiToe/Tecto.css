@@ -1,49 +1,88 @@
-*{
+* {
     margin: 0;
     padding: 0;
     transition: 0.2s;
 }
-body{
-    background-color: rgb(44, 43, 43);
+
+#Result {
+    padding: 10px 10px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 0;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    box-shadow: inset #56caa3 -1px 2px 14px 0px;
+    color: white;
+    background-color: #00049a;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .main {
+        zoom: 1.6;
+    }
+    
+    #Result {
+        margin-top: 100px;
+        width: 500px;
+        font-size: 4rem;
+    }
+}
+
+body {
+    background-color: rgba(17, 15, 15, 0.941);
     text-align: center;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 2px;
     height: 2px;
 }
-h1{
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+h1 {
     color: aqua;
-    font-size: 100px;
+    font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 0 0 6px rgb(234, 236, 122);
-    margin-top: 60px;
 }
-a{
+
+a {
     font-family: sans-serif;
     padding: 15px;
-    margin-right: 40px;
     color: rgb(252, 252, 252);
     background-color: rgb(84, 24, 224);
     border-radius: 25px;
-    font-size: 28px;
-    box-shadow: 0 0 15px 0 rgb(19, 18, 18); 
+    font-size: 20px;
+    box-shadow: 0 0 15px 0 rgb(19, 18, 18);
     border-bottom-left-radius: 5px;
-    border-top-right-radius: 5px ;
+    border-top-right-radius: 5px;
     text-decoration: none;
     font-weight: bold;
 }
-a:hover{
+
+a:hover {
     color: black;
     background-color: rgb(1, 198, 247);
     border-radius: 28px;
-    box-shadow: 0 0 10px 0 rgb(13, 3, 160); 
-    border-top-left-radius: 5px;  
-    border-bottom-right-radius: 5px ;
+    box-shadow: 0 0 10px 0 rgb(13, 3, 160);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
-a:active{
+
+a:active {
     color: red;
 }
-.box{
+
+.box {
+    background-color: transparent;
     border: 3px solid rgb(101, 250, 87);
     height: 170px;
     border-radius: 5px;
@@ -53,91 +92,44 @@ a:active{
     color: rgb(3, 176, 182);
     float: left;
 }
-.box:hover{
-    background-color: rgb(106, 109, 109);
-}
-.box:active{
-    background-color: antiquewhite;
-}
-.main{
-    position: relative;
-    top: 60px;
-    left: 140px;
-    width: 800px;
+
+.main {
+    width: calc(140px * 4);
     margin: auto;
-    display: none;
+    padding-left: 25px;
+    margin-top: 100px;
 }
-#d1,#d4,#d7{
+
+#d1,
+#d4,
+#d7 {
     clear: left;
     border-left: none;
 }
-#d1,#d2,#d3{
+
+#d1,
+#d2,
+#d3 {
     border-top: none;
 }
-#d3,#d6,#d9{
+
+#d3,
+#d6,
+#d9 {
     border-right: none;
 }
-#d7,#d8,#d9{
+
+#d7,
+#d8,
+#d9 {
     border-bottom: none;
 }
-.player{
-    background: rgb(12, 12, 12);
-    padding: 10px;
-    color: aliceblue;
-    width : 100%;
+
+.use {
+    cursor: no-drop;
 }
-button{
-    background-color: rgb(248, 106, 11);
-    font-size: 30px;
-    border-radius: 35px;
-    font-family: 'Times New Roman', Times, serif;
-    box-shadow: 0  5px rgb(228, 151, 151);
-    cursor: pointer;
-    width: 300px;
-    color: rgb(56, 1, 61);
-    padding: 8px;
-}
-button:hover{
-    background-color: blueviolet;
-    color: aqua;
-}
-button:active{
-    transform: translateY(6px);
-    background-color: burlywood;
-    color: brown;
-}
-strong{
-    margin-right: 100px;
-    font-size: 45px;
-    text-shadow: 0 0 25px  red;
-    margin-left: 100px;
-    padding: 10px;
-}
-input{
-    font-size: 30px;
-    padding: 17px;
-    border-radius: 20px;
-    margin: 5px;
-    border: 2px solid rgb(160, 3, 199);
-    box-shadow: 0 0 20px 0 rgb(240, 238, 238);
-    outline: none;
-    width: 250px;
-    color: rgb(232, 248, 12);
-    background-color: rgba(248, 239, 239, 0);
-}
-.in{
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 10px;
-}
-.in:hover{
-    padding: 11px;
-    font-size: 20px;
-    border-radius: 10px;
-}
-input:hover{
-    padding: 16px;
-    font-size: 31px;
-    border-radius: 30px;
-    border: 3px solid red;
+
+.win {
+    background-color: #10c50f;
+    color: #2c2b2b;
 }
