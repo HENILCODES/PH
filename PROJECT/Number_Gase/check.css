@@ -1,6 +1,6 @@
 @media only screen and (max-width:1000px) {
     .setP{
-        zoom: 2;
+        zoom: 1.9;
     }
 }
 *{
@@ -21,8 +21,7 @@ body{
 .setP{
     position: absolute;
     top: 50%;
-    left: 47%;
-    margin: 25px;
+    left: 50%;
     transform: translate(-50%,-50%);
 }
 .top{
@@ -40,7 +39,7 @@ body{
 }
 .result_box{
     background-color: #f1ec7f;
-    height: 350px;
+    height: 380px;
     text-align: left;
     padding: 25px;
     width: 100%;
@@ -86,7 +85,7 @@ button{
 }
 #reset{
     display: none;
-    background-color: #871616 !important;
+    background-color: #056331 !important;
 }
 .but{
     color: white;
