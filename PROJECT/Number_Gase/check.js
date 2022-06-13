@@ -9,9 +9,9 @@ $(document).ready(function () {
             if (i <= 5) {
                 if (UserGase < ComputerNumber) {
 
-                    $("#Result").before("<div class='message'><span> HINT :</span> Guess Higher Number > " + UserGase + "</div>");
+                    $("#Result").before("<div class='message'><span>HINT :</span> Guess Higher Number > " + UserGase + "</div>");
                 } else if (UserGase > ComputerNumber) {
-                    $("#Result").before("<div class='message'><span> HINT :</span> Guess Lower Number < " + UserGase + "</div>");
+                    $("#Result").before("<div class='message'><span>HINT :</span> Guess Lower Number < " + UserGase + "</div>");
                 } else {
                     $("#Result").before("<div class='message win'><span> Excellent : </span>" + UserGase + " Number Match </div>");
                     document.getElementById("inpu").style.display = "none";
@@ -28,7 +28,9 @@ $(document).ready(function () {
         }
         document.getElementById("NumB").focus();
     });
-
+    $(".but").click(function(){
+        window.location.reload();
+    })
     $(".RLicon").click(function () {
         $(".ruls").toggle(1000);
     });
