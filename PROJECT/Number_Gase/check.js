@@ -2,7 +2,6 @@ $(document).ready(function () {
     document.getElementById("NumB").focus();
     var ComputerNumber = Math.floor(Math.random() * 50);
     var i = 1;
-    console.log(ComputerNumber);
     document.getElementById("ChecK").addEventListener("click", function () {
         var UserGase = document.getElementById("NumB").value;
         document.getElementById("NumB").value = "";
