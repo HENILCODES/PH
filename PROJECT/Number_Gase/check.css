@@ -83,7 +83,6 @@ body {
     border-left: 2px solid black;
     width: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-top-right-radius: 10px;
     color: black;
     background-color: lightgreen;
 }
