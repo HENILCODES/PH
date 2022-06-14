@@ -2,39 +2,58 @@
 <html lang="en">
 
 <head>
-     <title>Number Guessing | Henil Code</title>
+    <title>Number Guessing | Henil Code</title>
     <link rel="stylesheet" href="check.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="icon" href="https://secure.gravatar.com/avatar/19cef1c37b12cb5d47ce71e9894dd14f?s=160&d=identicon&r=g" type="image">
+
+    <!-- <link rel="icon" href="https://secure.gravatar.com/avatar/19cef1c37b12cb5d47ce71e9894dd14f?s=160&d=identicon&r=g" type="image"> -->
 </head>
 
 <body>
     <div class="setP">
-        <div class="RLicon">
-            Rules
-        </div>
-        <div class="main">
+        <div class="Setting">
+            <div class="seting_wil">
+                <div class="will">
+                    <i class="bi bi-gear-fill"></i>
+                </div>
+            </div>
             <div class="ruls">
                 <ul>
-                    <li>1. You have Minimum 5 Attempt.</li>
-                    <li>2. Enter Number between 1 to 50. </li>
-                    <li>When Number Match Game Finish.</li>
+                    <li class="level level_easy"><i class="bi bi-arrow-right"></i> Easy Level</li>
+                    <li class="level level_normal"><i class="bi bi-arrow-right"></i> Normal Level</li>
+                    <li class="level level_hard"><i class="bi bi-arrow-right"></i> Hard Level</li>
                 </ul>
             </div>
+        </div>
+        <div class="main">
             <div class="top">
                 <h2 class="name">Number Guessing</h2>
-                <h3 id="comp_res"> </h3>
+                <div class="computer_R">
+                    <h3> <span id="attempts">0</span> / <span id="total_atamp">5</span></h3>
+                    <h4>Attempts</h4>
+                </div>
             </div>
             <div class="result_box">
                 <div id="Result"></div>
+                <div id="focB"></div>
+                <div id="level_info">
+                    <h1 id="CH_level">Easy Level</h1>
+                    <div class="h3">
+                        <h3> Number Between : <span>1 to <span id="BetweenNumb">50</span></span></h3>
+                        <h3> Total Attempts : <span class="total_atamp"> 5 </span></h3>
+                    </div>
+                </div>
             </div>
             <div class="input" id="inpu">
-                <input type="number" id="NumB" placeholder="enter Number">
+                <input type="number" id="NumB" placeholder="Enter Number">
                 <button id="ChecK">Check</button>
             </div>
             <div id="reset">
-                    <input type="submit" value="Re play" class="but">
+                <input type="submit" value="Re play" class="but">
             </div>
+        </div>
+        <div class="Footer">
+            <span>&copy; 2022 <a href="https://henilcodes.github.io/PH/"> Henil Code</a> </span>
         </div>
     </div>
 </body>
