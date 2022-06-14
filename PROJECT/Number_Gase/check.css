@@ -26,9 +26,8 @@ body {
 
 .setP {
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
-    margin: 70px 0;
     transform: translate(-50%, -50%);
 }
 
@@ -257,7 +256,7 @@ ul li {
     border-bottom: 2px solid rgb(247, 255, 7);
     font-size: 1rem;
     cursor: pointer;
-    width: 140px;
+    width: 170px;
 }
 
 ul li:hover {

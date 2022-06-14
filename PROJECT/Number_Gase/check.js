@@ -4,6 +4,7 @@ $(document).ready(function () {
     var attempt = 5;
     var ComputerNumber = Math.floor(Math.random() * levl);
     // level
+
     $(".level_easy").click(function () {
         gamelevel(50, 5);
         reset();
@@ -36,10 +37,8 @@ $(document).ready(function () {
         i = 1;
         document.getElementById("Result").innerHTML = "";
         document.getElementById("attempts").innerHTML = 0;
-        document.getElementById("NumB").focus();
         $("#level_info").show();
     }
-    document.getElementById("NumB").focus();
 
     document.getElementById("ChecK").addEventListener("click", function () {
         window.location = "#focB";
@@ -72,14 +71,12 @@ $(document).ready(function () {
                 i++;
             }
         }
-        document.getElementById("NumB").focus();
     });
     $(".but").click(function () {
         reset();
         $("#reset").hide();
         $("#inpu").show();
         ComputerNumber = Math.floor(Math.random() * levl);
-        document.getElementById("NumB").focus();
     })
     $(".seting_wil").click(function () {
         $(".ruls").toggle(1000);
