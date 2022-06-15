@@ -12,13 +12,13 @@ $(document).ready(function () {
         document.getElementById("CH_level").innerHTML = "Easy Level";
     })
     $(".level_normal").click(function () {
-        gamelevel(100, 10);
+        gamelevel(100, 8);
         reset();
         $(".ruls").toggle(1000);
         document.getElementById("CH_level").innerHTML = "Normal Level";
     })
     $(".level_hard").click(function () {
-        gamelevel(200, 20);
+        gamelevel(200, 11);
         reset();
         $(".ruls").toggle(1000);
         document.getElementById("CH_level").innerHTML = "Hard Level";
