@@ -10,24 +10,40 @@
 	<script src="JS/reload.js"></script>
 	<script src="JS/ajax_code.js"></script>
 	<script src="JS/copyCodes.js"></script>
-
+    <link rel="stylesheet" href="CSS/manu.css" media="screen and (min-width: 1000px)" >
+    <link rel="stylesheet" href="CSS/manu_phone.css" media="screen and (max-width: 1000px)">
 	<link rel="stylesheet" href="CSS/reload.css">
-	<link href="CSS/manu.css" rel="stylesheet">
 	<link href="CSS/content.css" rel="stylesheet">
 </head>
 
 <body>
-	<div class="main" id="menu">
-		<div class="logo"> <a href="https://henilcodes.github.io/PH/"> Henil code </a></div>
-		<div class="manus">
-			<a href="https://henilcodes.github.io/PH/"> <i class="fa fa-home"></i> Home</a>
-
-			<a href="html.html" id="act"> Html <i class="bi bi-file-earmark-code"></i></a>
-			<a href="project.html"><i class="bi bi-forward"></i> project </a>
-			<a href="about.html"> <i class="bi bi-person"></i> about</a>
-			<a href="register.html"><i class="bi bi-link-45deg"></i> sign up </a>
-		</div>
-	</div>
+	<div class="mamu_phone" id="PhoneManu">
+        <div class="logo"> <a href="https://henilcodes.github.io/PH/"> Henil code </a></div>
+        <i class="fa fa-bars" id="manu_bar"></i>
+    </div>
+    <div class="main" id="menu">
+        <div class="xl De_none"><i class="bi bi-x-lg"></i></div>
+        <div class="nav_logo center De_none">
+            <img src="File/Henil.ico" class="imageP" alt="">
+        </div>
+        <div class="logo_name center">
+            <div class="logo"> <a href="https://henilcodes.github.io/PH/"> Henil code </a></div>
+        </div>
+        <div class="manus center">
+            <div class="manu_link"><a href="https://henilcodes.github.io/PH/"> <i class="fa fa-home"></i> Home</a></div>
+            <div class="manu_link"><a href="html.html" id="act"> <i class="bi bi-forward"></i> html</a></div>
+            <div class="manu_link"><a href="project.html"><i class="bi bi-forward"></i> project </a></div>
+            <div class="manu_link"><a href="about.html"> <i class="bi bi-person"></i> about</a></div>
+            <div class="manu_link"><a href="register.html"><i class="bi bi-link-45deg"></i> Sign Up</a></div>
+        </div>
+        <div class="FoT De_none">
+            <div class="footer">
+                <a href="https://www.instagram.com/henil_v_p/" class="bi bi-instagram"></a>
+                <a href="https://www.facebook.com/henil.prajapati.376" class="bi bi-facebook"></a>
+            </div>
+            <div class="CoB"><span class="botF">Copyright &copy; 2022 Henil Code </span></div>
+        </div>
+    </div>
 	<div class="after_manu">
 		<div id="load">
 			<div class="reload"></div>
@@ -51,8 +67,10 @@
 				window.onscroll = function () {
 					var curnt = window.pageYOffset;
 					if (prevSc > curnt) {
+						document.getElementById("PhoneManu").style.top = "0";
 						document.getElementById("menu").style.top = "0";
 					} else {
+						document.getElementById("PhoneManu").style.top = "-120px";
 						document.getElementById("menu").style.top = "-90px";
 					}
 

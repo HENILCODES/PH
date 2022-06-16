@@ -1,0 +1,131 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("scrolbar.css");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body, html {
+    cursor: default;
+}
+
+body {
+    background-image: url("backimg.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: 'Times New Roman';
+}
+marquee {
+    color: red;
+    font-size: 15px;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 10px;
+}
+.none{
+    display: none;
+}
+.mamu_phone{
+    position: sticky;
+    background-color: rgb(197, 197, 197);
+    box-shadow: 5px 9px 20px 0px rgb(12 12 12);
+    display: flex;
+    transition: 0.5s;
+    margin-bottom: 70px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.mamu_phone .logo{
+    margin-left: 50px;
+}
+.logo a{
+    font-size: 7.2vw;
+    color :rgb(11, 3, 54);
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration: none;
+}
+#manu_bar{
+    font-size: 4rem;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 2px 10px;
+    margin-right: 45px;
+    border: 7px solid rgb(11, 3, 54);
+}
+.center{
+    text-align: center;
+}
+.main{
+    background-color: rgb(197, 197, 197);
+    box-shadow: 5px 9px 20px 0px rgb(12 12 12);
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 97%;
+    display: none;
+    overflow: auto;
+}
+.logo_name {
+    margin-top: 15px;
+    margin-bottom: 130px;
+}
+.nav_logo{
+    margin-top: 40px;
+}
+.nav_logo img {
+    border: 3px solid rgb(11, 3, 54);
+    border-radius: 50%;
+}
+.xl {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+.xl i{
+    font-size: 6.7rem;
+}
+.manus{
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+.manu_link{
+    text-align: left;
+    margin: 45px 0;
+}
+
+.FoT {
+    position: relative;
+    top: 205px;
+    text-align: center;
+    display: block;
+    opacity: 0.5;
+    width: 100%;
+}
+
+.CoB{
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: black;
+}
+.footer{
+    font-size:3rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+.manu_link a{
+    border-bottom: 5px  black;
+    font-size: 4rem;
+    color: rgb(11, 3, 54);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#act{
+    text-decoration: line-through !important;
+}

@@ -50,6 +50,7 @@ sup{
 }
 .social_Admin{
     display: flex;
+    z-index: -1;
     width: 95%;
     margin: auto;
     position: relative;

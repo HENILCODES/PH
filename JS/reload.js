@@ -4,3 +4,14 @@ window.onload = function(){
 function endreload() {
     document.getElementById("load").remove();
 }
+
+$(document).ready(function () {
+
+    $('#manu_bar').click(function () {
+        $(".main").show();
+    });
+    $('.xl').click(function () {
+        $(".main").hide();
+    });
+});
+
