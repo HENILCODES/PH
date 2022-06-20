@@ -2,7 +2,8 @@
     text-align: center;
 }
 
-h1 {
+.top{
+    width: 300px;
     text-align: center;
     text-shadow: 0 0 3px rgb(107, 9, 9);
     background-color: aliceblue;

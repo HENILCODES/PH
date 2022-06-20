@@ -16,8 +16,10 @@
 	padding-right: 10px;
 	padding-bottom: 300px;
 }
-
-h2 {
+.top{
+	text-align: center;
+}
+.top h2 {
 	text-shadow: 0 0 5px rgb(110, 107, 107);
 	background-color: rgb(206, 200, 116);
 	margin-top: 20px;
