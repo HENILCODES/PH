@@ -12,7 +12,6 @@ function JQ_html(j) {
         $('.P' + j + 'JA').hide(1000);
         $('.HTML' + j).css({ "background": "red", "color": "white" });
     });
-    console.log("JQ HTML " + j + " Click");
 }
 function JQ_css(j) {
     $(document).ready(function () {
@@ -22,7 +21,6 @@ function JQ_css(j) {
         $('.P' + j + 'JQ').hide(1000);
         $('.CSS' + j).css({ "background": "red", "color": "white" });
     });
-    console.log("JQ CSS " + j + " Click");
 }
 function JQ_javascript(j) {
     $(document).ready(function () {
@@ -32,7 +30,6 @@ function JQ_javascript(j) {
         $('.P' + j + 'JQ').hide(1000);
         $('.JAVASCRIPT' + j).css({ "background": "red", "color": "white" });
     });
-    console.log("JQ JAVASCRIPT " + j + " Click");
 }
 function JQ_jquery(j) {
     $(document).ready(function () {
@@ -42,7 +39,6 @@ function JQ_jquery(j) {
         $('.P' + j + 'JA').hide(1000);
         $('.JQUERY' + j).css({ "background": "red", "color": "white" });
     });
-    console.log("JQ JQUERY " + j + " Click");
 }
 //h1
 function PH(j) {
@@ -55,6 +51,4 @@ function PH(j) {
         $('.P' + j + 'JA').hide(1000);
         $('.P' + j + 'JQ').hide(1000);
         $('.fold').slideDown();
-    });
-    console.log("Heading " + j + " Click");
-}
+    });}

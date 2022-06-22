@@ -5,7 +5,6 @@ function HTML(program) {
     }
     Code.open("GET","Program/P"+program+"/p"+program+"ht.html");
     Code.send();
-    console.log("HTML "+program+" Loaded");
 }
 
 function CSS(program) {
@@ -15,7 +14,6 @@ function CSS(program) {
     }
     Code.open("GET","Program/P"+program+"/p"+program+"cs.css");
     Code.send();
-    console.log("CSS "+program+" Loaded");
 }
 
 
@@ -26,7 +24,6 @@ function JAVASCRIPT(program) {
     }
     Code.open("GET","Program/P"+program+"/p"+program+"ja.js");
     Code.send();
-    console.log("JAVASCRIPT "+program+" Loaded");
 
 }
 
@@ -38,5 +35,4 @@ function JQUERY(program) {
     }
     Code.open("GET","Program/P"+program+"/p"+program+"jq.js");
     Code.send();
-    console.log("JQUERY "+program+" Loaded");
 }
