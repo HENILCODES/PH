@@ -7,36 +7,29 @@ $(document).ready(function () {
 })
 function JQ_html(j) {
     $(document).ready(function () {
-        $('.P' + j + 'HT').slideDown(1000);
-        $('.P' + j + 'CS').hide(1000);
-        $('.P' + j + 'JA').hide(1000);
+        $('.P' + j + 'CODEBLOCK').slideUp(100);
+        $('.P' + j + 'CODEBLOCK').slideDown(1000);
         $('.HTML' + j).css({ "background": "red", "color": "white" });
     });
 }
 function JQ_css(j) {
     $(document).ready(function () {
-        $('.P' + j + 'CS').slideDown(1000);
-        $('.P' + j + 'HT').hide(1000);
-        $('.P' + j + 'JA').hide(1000);
-        $('.P' + j + 'JQ').hide(1000);
+        $('.P' + j + 'CODEBLOCK').slideUp(100);
+        $('.P' + j + 'CODEBLOCK').slideDown(1000);
         $('.CSS' + j).css({ "background": "red", "color": "white" });
     });
 }
 function JQ_javascript(j) {
     $(document).ready(function () {
-        $('.P' + j + 'JA').slideDown(1000);
-        $('.P' + j + 'HT').hide(1000);
-        $('.P' + j + 'CS').hide(1000);
-        $('.P' + j + 'JQ').hide(1000);
+        $('.P' + j + 'CODEBLOCK').slideUp(100);
+        $('.P' + j + 'CODEBLOCK').slideDown(1000);
         $('.JAVASCRIPT' + j).css({ "background": "red", "color": "white" });
     });
 }
 function JQ_jquery(j) {
     $(document).ready(function () {
-        $('.P' + j + 'JQ').slideDown(1500);
-        $('.P' + j + 'HT').hide(1000);
-        $('.P' + j + 'CS').hide(1000);
-        $('.P' + j + 'JA').hide(1000);
+        $('.P' + j + 'CODEBLOCK').slideUp(100);
+        $('.P' + j + 'CODEBLOCK').slideDown(1000);
         $('.JQUERY' + j).css({ "background": "red", "color": "white" });
     });
 }
@@ -46,9 +39,7 @@ function PH(j) {
         $('#PB' + j).toggle(1000);
         $('#PH' + j).css("color", "red");
         $('#PH' + j).css("background", "rgb(204 218 207)");
-        $('.P' + j + 'HT').hide(1000);
-        $('.P' + j + 'CS').hide(1000);
-        $('.P' + j + 'JA').hide(1000);
-        $('.P' + j + 'JQ').hide(1000);
+        $('.P' + j + 'CODEBLOCK').slideUp(500);
         $('.fold').slideDown();
-    });}
+    });
+}
