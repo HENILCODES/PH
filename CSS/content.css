@@ -126,6 +126,7 @@ input[type=button]:active {
 .Scrol_Top_Bottm .go_bottm,
 .fold_bt .fold {
 	position: fixed;
+	z-index: 1;
 	padding: 10px;
 	background-color: rgb(11, 3, 54);
 	border: 0;

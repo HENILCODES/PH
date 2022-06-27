@@ -50,7 +50,6 @@ sup{
 }
 .social_Admin{
     display: flex;
-    z-index: -1;
     width: 95%;
     margin: auto;
     position: relative;
@@ -69,9 +68,9 @@ sup{
     color: #38090f;
 }
 .admin h3{
-    margin-left: 35px;
+    margin-left: 30px;
     margin-top: 30px;
-    font-size: 25px;
+    font-size: 22px;
     color: rgb(7, 0, 71);
 }
 .social{

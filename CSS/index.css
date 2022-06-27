@@ -104,7 +104,9 @@ sup{
 .other_pl ul a{
     display: block;    
 }
-
+a{
+    text-decoration: none;
+}
 h2 a{
     text-transform: none;
     color: rgb(2, 10, 116);

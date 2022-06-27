@@ -10,9 +10,6 @@ $(document).ready(function () {
             document.getElementById("auto_tp1").innerHTML += T1.charAt(i);
             i++;
         }
-        if (i == 14) {
-            document.getElementById("auto_tp1").innerHTML += "<i class='bi bi-emoji-smile'></i> ";
-        }
         
         if (i == T1.length) {
             document.getElementById("auto_tp1").innerHTML = " ";
@@ -23,9 +20,8 @@ $(document).ready(function () {
         }
         
         if (j == T2.length) {
-            document.getElementById("auto_tp2").innerHTML += "<i class='bi bi-emoji-smile'></i> ";
             document.getElementById("last").style.display = "none";
-            document.getElementById("auto_Script").remove();
+            // document.getElementById("auto_Script").remove();
         }
         setTimeout(type, 70);
     }
