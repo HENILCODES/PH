@@ -37,8 +37,7 @@ function JQ_jquery(j) {
 function PH(j) {
     $(document).ready(function () {
         $('#PB' + j).toggle(1000);
-        $('#PH' + j).css("color", "red");
-        $('#PH' + j).css("background", "rgb(204 218 207)");
+        $('#PH' + j).css({"background":"rgb(204 218 207)","color":"red"});
         $('.P' + j + 'CODEBLOCK').slideUp(500);
         $('.fold').slideDown();
     });
