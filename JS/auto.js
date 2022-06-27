@@ -21,9 +21,7 @@ $(document).ready(function () {
         
         if (j == T2.length) {
             document.getElementById("last").style.display = "none";
-            // document.getElementById("auto_Script").remove();
         }
         setTimeout(type, 70);
     }
-    console.log(T1.length + " | "+ T2.length);
 });
