@@ -11,10 +11,8 @@ body, html {
 }
 
 body {
-    background-image: url("backimg.jpg");
-    background-position: center;
-    background-size: cover;
     font-family: 'Times New Roman';
+    background-color: #d6dbde;
     user-select: none;
 }
 marquee {
