@@ -28,16 +28,6 @@ body{
     color: rgb(168, 3, 3);
     margin-bottom: 20px;
 }
-.letest_blc:hover{
-    background-color: rgb(131, 221, 138);
-}
-
-.other_pl:hover{
-    background-color: rgb(169, 236, 213);
-}
-.social_Admin:hover{
-    background-color: rgb(245, 225, 160);
-}
 .letest_blc h2{
     margin: 20px;
     margin-left: 100px;
@@ -46,9 +36,6 @@ sup{
     font-size: 15px;
 }
 
-.containt h1:hover{
-    box-shadow: 0 0 20px rgb(133, 23, 23);
-}
 .containt h1 span{
     font-family: 'Courier New';
 }
