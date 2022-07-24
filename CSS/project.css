@@ -1,7 +1,6 @@
 .projects {
     text-align: center;
-}
-
+}    
 .top{
     width: 300px;
     text-align: center;
@@ -21,30 +20,51 @@ a {
 }
 
 .date {
-    text-align: right;
-    font-size: 20px;
     color: rgb(2, 2, 61);
     text-shadow: 0 0 10px #05afda;
-    font-weight: bold;
+    letter-spacing: 2px;
+    display: none;
 }
-
+@media (max-width:700px){
+    button{
+        font-size: 1.2rem;
+        width: 100%;
+        margin-bottom: 5px;
+        padding: 18px 12px;
+    }
+    button i{
+        display: none;
+    }
+    .date{
+        font-size: 0.9rem;
+    }
+}
+@media (min-width:700px){
+    button{
+        font-size: 22px;
+        width: 60%;
+        padding: 20px 10px 15px 110px;
+    }
+    .date{
+        text-align: right;
+        font-size: 20px;
+    }
+}
 button {
     text-align: left;
     cursor: pointer;
+    text-transform: capitalize;
     color: #f1f5f0;
     border: 2px ridge rgb(193, 236, 37);
-    font-size: 22px;
-    margin-top: 35px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 20px;
     letter-spacing: 2;
     background: #f09433;
     background: linear-gradient(20deg, green 83%, orangered 15%);
-    padding: 20px 10px 15px 110px;
     box-shadow: 0 0 10px 0 rgb(21, 166, 192);
-    width: 60%;
     background-color: rgb(65, 34, 241);
     transition: .7s;
+    margin-top: 35px;
 }
 
 button:hover {
