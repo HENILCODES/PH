@@ -49,10 +49,10 @@ sup{
     font-size: 15px;
 }
 .social_Admin{
-    display: none;
     width: 95%;
     margin: auto;
     position: relative;
+    display: flex;
     box-shadow: 0 0 12px 0 red;
     padding: 15px;
     border-radius: 30px;
