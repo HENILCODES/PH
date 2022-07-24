@@ -6,15 +6,11 @@
 	padding: 10px;
 	padding-top: 0;
 	margin: auto;
-	width: 76%;
 }
 
 .content {
 	margin: auto;
-	padding-left: 15px;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 300px;
+	padding: 15px 0;
 }
 .top{
 	text-align: center;
@@ -28,17 +24,61 @@
 	padding: 10px;
 	border-radius: 15px;
 }
-
+@media (max-width:700px){
+	.Program{
+		width: 90%;
+	}
+	.h1 span{
+		font-size: 13px;
+		letter-spacing: 2px;
+	}
+	.h1 h1{
+		font-size: 1rem;
+	}
+	.h1{
+		width: 98%;
+	}
+	h1 i{
+		display: none;
+	}
+	input[type=button] {
+		margin-bottom: 5px;
+	}
+	.dataC{
+		font-size: 13px;
+		width: 96%;
+	}
+}
+@media (min-width:700px){
+	.dataC {
+		font-size: 20px;
+		width: 80%;
+	}
+	
+	input[type=button] {
+		font-size: 20px;
+	}
+	.h1{
+		width: 70%;
+		margin: auto;
+		display: flex;
+	}
+	.h1:hover{
+		color: rgb(245, 245, 245);
+		width: 73%;
+		background: rgb(111, 87, 148);
+	}
+	.Program{
+		width: 65%;
+	}
+}
 .h1 {
 	border: 2px solid rgb(40, 7, 226);
 	border-radius: 15px;
 	justify-content: space-between;
 	border-top-right-radius: 10px;
 	padding: 6px;
-	width: 80%;
 	font-size: 13px;
-	display: flex;
-	margin: auto;
 	margin-top: 35px;
 	box-shadow: 0 0 10px 0 red;
 	cursor: pointer;
@@ -54,11 +94,7 @@
 	text-transform: capitalize;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.h1:hover{
-	color: rgb(245, 245, 245);
-	width: 83%;
-	background: rgb(111, 87, 148);
-}
+
 
 .h1:active {
 	background: #04993d;
@@ -80,12 +116,10 @@
 	color: lightgreen;
 	display: none;
 	background: rgb(27, 31, 40);
-	font-size: 20px;
 	padding: 10px;
 	user-select: all;
 	height: 275px;
 	overflow: auto;
-	width: 86%;
 	font-family: 'Courier New', Courier, monospace;
 	border: 5px solid rgb(209, 25, 194);
 	border-radius: 20px 6px 6px 13px;
@@ -95,7 +129,7 @@ input[type=button] {
 	background-color: rgb(12, 238, 61);
 	border: 2px dashed rgb(13, 14, 13);
 	color: rgb(17, 16, 16);
-	font-size: 20px;
+	/* font-size: 20px; */
 	cursor: pointer;
 	border-bottom-left-radius: 20px;
 	padding: 5px 10px;
@@ -104,21 +138,11 @@ input[type=button] {
 
 input[type=button]:hover {
 	background-color: rgb(212, 233, 20);
-	border: 2px dashed rgb(12, 22, 117);
-	color: rgb(68, 2, 13);
-	font-size: 20px;
 	border-bottom-left-radius: 20px;
-	padding: 11px;
 	font-weight: bold;
+	padding: 7px 12px;
 }
 
-input[type=button]:active {
-	background-color: rgb(11, 114, 211);
-	border: 2px dashed rgb(195, 248, 4);
-	color: rgb(10, 0, 0);
-	font-size: 20px;
-	border-bottom-left-radius: 20px;
-}
 #Scrol{
 	display: none;
 }
@@ -162,14 +186,14 @@ input[type=button]:active {
 }
 
 .Scrol_Top_Bottm .go_top {
-	bottom: 155px;
-	right: 10px;
+	bottom: 50px;
+	right: 15px;
 }
 
 .fold_bt .fold {
-	top: 150px;
+	bottom: 50px;
 	display: none;
-	left: 5px;
+	left: 15px;
 }
 
 .Scrol_Top_Bottm .go_bottm {

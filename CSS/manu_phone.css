@@ -78,7 +78,7 @@ body {
     margin-bottom: 50px;
 }
 .nav_logo{
-    margin-top: 10px;
+    margin-top: 22px;
 }
 .nav_logo img {
     border: 3px solid rgb(11, 3, 54);
@@ -87,8 +87,8 @@ body {
 }
 .xl {
     position: absolute;
-    right: 10px;
-    top: 5px;
+    right: 15px;
+    top: 7px;
 }
 .xl i{
     font-size: 3rem;
@@ -101,7 +101,7 @@ body {
 }
 .manu_link{
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 .manu_link a{
     border-bottom: 5px  black;
