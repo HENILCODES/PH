@@ -1,0 +1,26 @@
+.bottomF{
+    background-color: rgb(197, 197, 197);
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(74, 82, 88);
+}
+
+.Bottom_footer .fot_manus ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Bottom_footer .fot_manus ul li{
+    margin: 10px;
+    list-style: none;
+}
+.Bottom_footer .fot_manus ul li a{
+    font-weight:400 ;
+    color: rgb(87, 92, 97);
+}
+.manuCopyW{
+    margin-top: 20px;
+}

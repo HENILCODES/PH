@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    setTimeout(type, 2150);
+    setTimeout(type, 2550);
     // index auto type
     var i = 0;
     var j = 0;
@@ -22,6 +22,6 @@ $(document).ready(function () {
         if (j == T2.length) {
             document.getElementById("last").style.display = "none";
         }
-        setTimeout(type, 70);
+        setTimeout(type, 85);
     }
 });

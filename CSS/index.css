@@ -3,20 +3,78 @@ body{
 }
 .letest_blc{
     background-color: rgb(99, 230, 117);
-    margin-left: 70px;
-    margin-right: 12px;
     border-radius: 50px;
-    padding: 17px;
     box-shadow: 0 0 13px 0 red;
+}
+.letest_blc h3{
+    margin-left: 10px;
 }
 .letest_blc h3 a{
     text-transform: uppercase;
     color: rgb(58, 4, 119);
-    margin-left: 20px;
+    margin-left: 3px;
 }
-.tabgroup{
-    display: flex;
-
+@media (min-width: 700px) {
+    .tabgroup{
+        display: flex;
+        margin-top: 29px;
+        justify-content: space-around;
+    }
+    .letest_blc h2{
+        margin: 20px;
+        margin-left: 100px;
+    }
+    .letest_blc h1{
+        margin-bottom: 29px;
+    }
+    .other_pl ul a , .just_fun a{
+        font-size: 20px;
+    }
+    .other_pl, .letest_blc{
+        padding: 25px 30px;
+    }
+    .containt h1{
+        font-size: 1.3rem;
+        padding-left: 20px;
+    }
+}
+@media (min-width:900px) {
+    .just_fun{
+        max-width: 81%;
+    }
+}
+@media (max-width: 700px){
+    .containt h1{
+        font-size: 1.2rem;
+    }
+    .letest_blc h1, .other_pl h1 , .just_fun h1{
+        font-size: 1.3rem;
+    }
+    .letest_blc h2 {
+        margin: 25px 0;
+        text-align: center;
+    }
+    .letest_blc h3{
+        font-size: 1rem;
+    }
+    .other_pl ul a , .letest_blc h2,.data a{
+        font-size: 1rem;
+    }
+    .tabgroup{
+        display: block;
+        margin-top: 30px;
+    }
+    .after_manu{
+        padding: 2px 20px;
+    }
+    .other_pl, .letest_blc{
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        max-width: 350px;
+        padding: 20px;
+    }
 }
 .letest_blc h4{
     color: red;
@@ -26,12 +84,8 @@ body{
     text-align: center;
     padding-bottom: 15px;
     color: rgb(168, 3, 3);
-    margin-bottom: 20px;
 }
-.letest_blc h2{
-    margin: 20px;
-    margin-left: 100px;
-}
+
 sup{
     font-size: 15px;
 }
@@ -42,9 +96,7 @@ sup{
 
 .containt h1{
     border-radius: 15px;
-    padding: 7px;
-    padding-left: 45px;
-    font-size: 24px;
+    padding: 15px;
     box-shadow: 0 0 10px #851717;
     margin: 20px;
     color: rgb(126, 5, 106);
@@ -52,12 +104,8 @@ sup{
 }
 .other_pl{
     background-color: rgb(211, 188, 57);
-    margin:auto;
-    margin-right: 70px;
-    font-size: 16px;
-    width: 400px;
+    font-size: 16px; 
     border-radius: 50px;
-    padding: 15px;
     box-shadow: 0 0 10px 0 red;
 }
 .other_pl h1{
@@ -69,7 +117,7 @@ sup{
     background: rgb(185, 169, 76);
     margin: auto;
     padding: 10px;
-    width: 230px;
+    max-width: 260px;
     border-radius: 20px;
 }
 .other_pl ul a:hover{
@@ -81,9 +129,8 @@ sup{
     font-weight: bold;
     border-radius: 10px;
     text-transform: none;
-    padding: 6px;
+    padding: 7px;
     cursor: pointer;
-    font-size: 20px;
     margin: 10px;
     background-color: antiquewhite;
 }
@@ -100,9 +147,10 @@ h2 a{
 }
 .just_fun{
     background-color: #0fe87f;
-    margin: 35px 80px 20px 80px ;
     border-radius: 30px ;
-    padding: 25px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 40px;
     box-shadow: 0 0 10px 0 red;
 }
 .just_fun h1{
@@ -114,19 +162,16 @@ h2 a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-size: large;
     color: rgb(66, 0, 69);
     margin-top: 15px;
 }
 .data a{
     color: rgb(23, 0, 127);
-    font-size: 22px;
     transition: .5s;
 }
 .data h3{
     margin-bottom: 22px ;
 }
 .data a:hover{
-    font-size: 25px;
     color: yellow;
 }
