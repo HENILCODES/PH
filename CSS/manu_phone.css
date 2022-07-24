@@ -7,6 +7,9 @@
     padding: 0;
     font-family: sans-serif;
 }
+.center{
+    text-align: center;
+}
 body, html {
     cursor: default;
 }
@@ -16,13 +19,7 @@ body {
     background-color: #d6dbde;
     user-select: none;
 }
-marquee {
-    color: red;
-    font-size: 15px;
-    position: relative;
-    z-index: -1;
-    margin-bottom: 10px;
-}
+
 .manus .bi , .manus .fa{
     display: none;
 }
@@ -41,7 +38,7 @@ marquee {
     padding: 15px 0;
 }
 .logo a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color :rgb(11, 3, 54);
     letter-spacing: 2px;
     font-family: monospace;
@@ -56,9 +53,6 @@ marquee {
     height: 30px;
     background-color: #d6dbde;
 }
-.center{
-    text-align: center;
-}
 .main{
     background-color: rgb(197, 197, 197);
     box-shadow: 5px 9px 20px 0px rgb(12 12 12);
@@ -66,67 +60,68 @@ marquee {
     height: 100%;
     top: 0;
     right: 0;
-    width: 98%;
+    width: 100%;
     display: none;
     overflow: auto;
-    z-index: 10;
+    z-index: 12;
 }
 .logo_name {
     margin-top: 15px;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
 }
 .nav_logo{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 .nav_logo img {
     border: 3px solid rgb(11, 3, 54);
     border-radius: 50%;
+    width: 80px;
 }
 .xl {
     position: absolute;
-    right: 40px;
-    top: 20px;
+    right: 10px;
+    top: 5px;
 }
 .xl i{
-    font-size: 6.7rem;
+    font-size: 3rem;
 }
 .manus{
     display: block;
     width: 70%;
     margin: auto;
+    margin-bottom: 50px;
 }
 .manu_link{
     text-align: left;
-    margin: 45px 0;
+    margin-bottom: 25px;
+}
+.manu_link a{
+    border-bottom: 5px  black;
+    font-size: 1.3rem;
+    color: rgb(11, 3, 54);
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .FoT {
-    position: relative;
-    top: 250px;
     text-align: center;
     display: block;
     opacity: 0.5;
     width: 100%;
+    padding-bottom: 25px;
 }
 
 .CoB{
     margin-top: 20px;
-    font-size: 2.5rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     color: black;
 }
 .footer{
-    font-size:3rem;
+    font-size:1.2rem;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
-}
-.manu_link a{
-    border-bottom: 5px  black;
-    font-size: 4rem;
-    color: rgb(11, 3, 54);
-    text-transform: uppercase;
-    text-decoration: none;
 }
 #act{
     text-decoration: underline;
