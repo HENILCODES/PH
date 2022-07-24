@@ -1,10 +1,5 @@
-.content{
-    padding-left: 15px;
-    padding-top: 15px;
-}
 .content h1{
     color: #0e0250;
-    font-size: 50px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -13,16 +8,37 @@
     padding: 15px;
     color: #6d3202;
 }
-.about_containt{
-    box-shadow: 0 0 8px black;
-    border-radius: 20px;
-    width: 100%;
-    margin-right: 10px;
-    margin-left: 20px;
-    padding: 10px;
+@media (min-width:700px){
+    .content{
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    .personal_detail{
+        display: flex;
+        width: 98%;
+    }   
+    .content h1{
+        font-size: 50px;
+    }
+    .about_containt{
+        margin-left: 20px;
+        box-shadow: 0 0 8px black;
+        width: 100%;
+    }
+    .img{
+        font-size: 20px;
+        box-shadow: 0 0 10px 0 black;
+    }
 }
-.personal_detail{
-    display: flex;
+@media (max-width:700px){
+    .content h1{
+        font-size: 2rem;
+    }
+}
+.about_containt{
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 10px;
 }
 img{
     border-radius: 150px;  
@@ -82,13 +98,10 @@ sup{
     width: 250px;
     padding: 10px;
     text-align: center;
-    box-shadow: 0 0 10px 0 black;
     margin:auto;
     border-radius: 15px;
-    font-size: 20px;
-    margin-right: 20px;
 }
-.fa-instagram{
+.social .fa-instagram{
     background: #f09433; 
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     font-size: 50px;
@@ -99,27 +112,27 @@ sup{
     margin: 15px;
     padding: 5px;
 }
-.fa-instagram:hover{
+.social .fa-instagram:hover{
     box-shadow: 0 0 15px 0 rgb(175, 61, 61);
 }
-.fa-wordpress:hover{
+.social .fa-wordpress:hover{
     box-shadow:  0 0 15px 0 black;
     border-radius: 50%;
 }
-.bi-facebook:hover{
+.social .bi-facebook:hover{
     box-shadow: 0 0 15px 0 rgb(41, 0, 221);
 }
-.bi-envelope{
+.social .bi-envelope{
         font-size: 20px;
     }
-    .fa-wordpress{
+    .social .fa-wordpress{
         font-size: 50px;
         cursor: pointer;
         transition: .5s;
         color: black;
         margin: 15px;
     }
-    .bi-facebook{
+   .social .bi-facebook{
         font-size: 50px;
         cursor: pointer;
         color: white;

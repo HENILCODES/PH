@@ -28,7 +28,7 @@ body {
     display: none;
 }
 .none{
-    display: none;
+    display: none !important;
 }
 .mamu_phone .logo a{
     font-size: 2rem;
