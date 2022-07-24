@@ -13,7 +13,11 @@
 body, html {
     cursor: default;
 }
-
+@media (max-width: 700px){
+    .after_manu{
+        padding: 2px 15px;
+    }
+}
 body {
     font-family: 'Times New Roman';
     background-color: #d6dbde;
@@ -25,6 +29,9 @@ body {
 }
 .none{
     display: none;
+}
+.mamu_phone .logo a{
+    font-size: 2rem;
 }
 .mamu_phone{
     position: sticky;
@@ -61,6 +68,7 @@ body {
     top: 0;
     right: 0;
     width: 100%;
+    padding-bottom: 90px;
     display: none;
     overflow: auto;
     z-index: 12;
