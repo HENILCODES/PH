@@ -8,78 +8,39 @@ function clock() {
     var yr = date.getFullYear();
     var day = date.getDay();
 
-    document.getElementById("clock").innerHTML = hr + " : " + mt + " : " + sc;
+// display time
+document.getElementById("clock").innerHTML = hr + " : " + mt + " : " + sc;
 
-    if (mu == 0) {
-        document.getElementById("date").innerHTML = dt + " / January / " + yr;
-    }
-    else if (mu == 1) {
-        document.getElementById("date").innerHTML = dt + " / February / " + yr;
-    }
-    else if (mu == 2) {
-        document.getElementById("date").innerHTML = dt + " / March / " + yr;
-    }
-    else if (mu == 3) {
-        document.getElementById("date").innerHTML = dt + " / April / " + yr;
-    }
-    else if (mu == 4) {
-        document.getElementById("date").innerHTML = dt + " / May / " + yr;
-    }
-    else if (mu == 5) {
-        document.getElementById("date").innerHTML = dt + " / June / " + yr;
-    }
-    else if (mu == 6) {
-        document.getElementById("date").innerHTML = dt + " / July / " + yr;
-    }
-    else if (mu == 7) {
-        document.getElementById("date").innerHTML = dt + " / August / " + yr;
-    }
-    else if (mu == 8) {
-        document.getElementById("date").innerHTML = dt + " / September / " + yr;
-    }
-    else if (mu == 9) {
-        document.getElementById("date").innerHTML = dt + " / October / " + yr;
-    }
-    else if (mu == 10) {
-        document.getElementById("date").innerHTML = dt + " / November / " + yr;
-    }
-    else if (mu == 11) {
-        document.getElementById("date").innerHTML = dt + " / December / " + yr;
-    }
-    else {
-        alert("Error Find Date & time");
-    }
+// Find Date with month name
+let Month_Check = mu == 0 ? "January":
+                  mu == 1 ? "February":
+                  mu == 2 ? "March":
+                  mu == 3 ? "April":
+                  mu == 4 ? "May":
+                  mu == 5 ? "June":
+                  mu == 6 ? "July":
+                  mu == 7 ? "August":
+                  mu == 8 ? "September":
+                  mu == 9 ? "October":
+                  mu == 10 ? "November":
+                  mu == 11 ? "December":
+                  "0000";
+document.getElementById("date").innerHTML = dt + " / " +Month_Check +" / "  + yr;
 
-    if (day == 0) {
-        document.getElementById("day").innerHTML = "Sunday";
-    }
-    else if (day == 1) {
-        document.getElementById("day").innerHTML = "Monday";
-    }
-    else if (day == 2) {
-        document.getElementById("day").innerHTML = "Tuesday";
-    }
-    else if (day == 3) {
-        document.getElementById("day").innerHTML = "Wednesday";
-    }
-    else if (day == 4) {
-        document.getElementById("day").innerHTML = "Thursday";
-    }
-    else if (day == 5) {
-        document.getElementById("day").innerHTML = "Friday";
-    }
-    else if (day == 6) {
-        document.getElementById("day").innerHTML = "Saturday";
-    }
-    else {
-        alert("Error find Date & Time");
-    }
+// chekc day
+let C_Day = day == 0? "Sunday":
+            day == 1? "Monday":
+            day == 2? "Tuesday":
+            day == 3? "Wednesday":
+            day == 4? "Thursday":
+            day == 5? "Friday":
+            day == 6? "Saturday":
+            "00000";
+document.getElementById("day").innerHTML = C_Day;
 
-    if (hr < 12) {
-        document.getElementById("AP").innerHTML = "AM";
-    }
-    else {
-        document.getElementById("AP").innerHTML = "PM";
-    }
-    setTimeout(clock, 1000);
+// AM PM Check
+let Am_Pm_check = hr <12?"AM":"PM";
+document.getElementById("AP").innerHTML = Am_Pm_check;
+
+setTimeout(clock, 1000);
 }

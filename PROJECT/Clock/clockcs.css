@@ -3,8 +3,18 @@
 body {
     background-color: rgb(7, 7, 7);
     color: aliceblue;
+    cursor: none;
+    user-select: none;
 }
-
+.title{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.mutes{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
 .body {
     background-color: rgb(250, 250, 250);
     color: #070707;
@@ -42,6 +52,7 @@ body {
 #AP {
     margin-left: 20px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .audio {
@@ -52,7 +63,7 @@ body {
     margin-top: 30px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 0 0 5px rgb(32, 43, 199);
+    font-weight: 500;
 }
 
 #clock {
@@ -89,15 +100,14 @@ body {
     transform: translate(10px);
 }
 
-i {
+.bi-whatsapp {
     position: relative;
     font-size: 48px;
     cursor: pointer;
     transition: .5s;
     color: rgb(29, 243, 29);
 }
-
-i:hover {
+.bi-whatsapp:hover {
     font-size: 60px;
 }
 
@@ -136,5 +146,11 @@ button:hover {
 @media only screen and (max-width: 1000px) {
     .header {
         zoom: 2;
+    }
+    .header{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
 }
