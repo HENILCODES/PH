@@ -33,7 +33,7 @@
 		letter-spacing: 2px;
 	}
 	.h1 h1{
-		font-size: 1rem;
+		font-size: 1rem !important;
 	}
 	.h1{
 		width: 98%;
@@ -64,9 +64,7 @@
 		display: flex;
 	}
 	.h1:hover{
-		color: rgb(245, 245, 245);
-		width: 73%;
-		background: rgb(111, 87, 148);
+		background: rgb(165, 133, 216);
 	}
 	.Program{
 		width: 65%;
