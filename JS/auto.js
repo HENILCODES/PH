@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    setTimeout(type, 2550);
+    setTimeout(type, 1150);
     // index auto type
     var i = 0;
     var j = 0;
