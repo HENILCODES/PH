@@ -1,5 +1,5 @@
 window.onload = function(){
-    setTimeout(endreload, 2200);
+    setTimeout(endreload, 1000);
 }
 function endreload() {
     document.getElementById("spiner").remove();

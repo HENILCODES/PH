@@ -1,6 +1,10 @@
+<style>
+    img{
+        width:100px;
+    }
+</style>
 <h1> Henil code </h1>
-<!-- # Henil code -->
-
+<img src="https://henilcodes.github.io/PH/File/Henil.ico">
 create a website use many language
 
 That is web-site in create web-page
