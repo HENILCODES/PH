@@ -1,24 +1,24 @@
 $(document).ready(function () {
     var i = 1;
-    var levl = 50;
-    var attempt = 5;
+    var levl = 200;
+    var attempt = 15;
     var ComputerNumber = Math.floor(Math.random() * levl);
     // level
 
     $(".level_easy").click(function () {
-        gamelevel(50, 5);
+        gamelevel(200, 15);
         reset();
         $(".ruls").toggle(1000);
         document.getElementById("CH_level").innerHTML = "Easy Level";
     })
     $(".level_normal").click(function () {
-        gamelevel(100, 8);
+        gamelevel(100, 10);
         reset();
         $(".ruls").toggle(1000);
         document.getElementById("CH_level").innerHTML = "Normal Level";
     })
     $(".level_hard").click(function () {
-        gamelevel(200, 11);
+        gamelevel(100, 5);
         reset();
         $(".ruls").toggle(1000);
         document.getElementById("CH_level").innerHTML = "Hard Level";
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     document.getElementById("ChecK").addEventListener("click", function () {
         window.location = "#focB";
-
+        document.getElementById("NumB").focus();
         var UserGase = document.getElementById("NumB").value;
 
         document.getElementById("NumB").value = "";

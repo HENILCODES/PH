@@ -140,6 +140,8 @@ button {
     color: white;
     text-transform: capitalize;
     padding: 5px 0;
+    text-align: center;
+    cursor: pointer;
     font-size: 2rem;
 }
 
