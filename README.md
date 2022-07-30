@@ -1,8 +1,4 @@
-<style>
-    img{
-        width:100px;
-    }
-</style>
+
 <h1> Henil code </h1>
 <img src="https://henilcodes.github.io/PH/File/Henil.ico">
 create a website use many language
