@@ -1,46 +1,51 @@
 function clock() {
-    const date = new Date();
-    var hr = date.getHours();
-    var mt = date.getMinutes();
-    var sc = date.getSeconds();
-    var dt = date.getDate();
-    var mu = date.getMonth();
-    var yr = date.getFullYear();
-    var day = date.getDay();
+  const date = new Date();
+  let hr = date.getHours();
+  let mt = date.getMinutes();
+  let sc = date.getSeconds();
+  let dt = date.getDate();
+  let mu = date.getMonth();
+  let yr = date.getFullYear();
+  let day = date.getDay();
 
-// display time
-document.getElementById("clock").innerHTML = hr + " : " + mt + " : " + sc;
+  // display time
+  document.getElementById("clock").innerHTML = hr + " : " + mt + " : " + sc;
 
-// Find Date with month name
-let Month_Check = mu == 0 ? "January":
-                  mu == 1 ? "February":
-                  mu == 2 ? "March":
-                  mu == 3 ? "April":
-                  mu == 4 ? "May":
-                  mu == 5 ? "June":
-                  mu == 6 ? "July":
-                  mu == 7 ? "August":
-                  mu == 8 ? "September":
-                  mu == 9 ? "October":
-                  mu == 10 ? "November":
-                  mu == 11 ? "December":
-                  "0000";
-document.getElementById("date").innerHTML = dt + " / " +Month_Check +" / "  + yr;
+  // Find Date with month name
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let Month_check = months[mu];
+  document.getElementById("date").innerHTML =
+    dt + " / " + Month_check + " / " + yr;
 
-// chekc day
-let C_Day = day == 0? "Sunday":
-            day == 1? "Monday":
-            day == 2? "Tuesday":
-            day == 3? "Wednesday":
-            day == 4? "Thursday":
-            day == 5? "Friday":
-            day == 6? "Saturday":
-            "00000";
-document.getElementById("day").innerHTML = C_Day;
+  // chekc day
+  const Day = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let Day_check = Day[day];
+  document.getElementById("day").innerHTML = Day_check;
 
-// AM PM Check
-let Am_Pm_check = hr <12?"AM":"PM";
-document.getElementById("AP").innerHTML = Am_Pm_check;
+  // AM PM Check
+  let Am_Pm_check = hr < 12 ? "AM" : "PM";
+  document.getElementById("AP").innerHTML = Am_Pm_check;
 
-setTimeout(clock, 1000);
+  setTimeout(clock, 1000);
 }

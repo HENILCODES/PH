@@ -3,7 +3,6 @@
 body {
     background-color: rgb(7, 7, 7);
     color: aliceblue;
-    cursor: none;
     user-select: none;
 }
 .title{
@@ -60,10 +59,12 @@ body {
 }
 
 .header {
-    margin-top: 30px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 #clock {
@@ -99,7 +100,9 @@ body {
     color: rgb(15, 1, 1);
     transform: translate(10px);
 }
-
+.sher{
+    display: none;
+}
 .bi-whatsapp {
     position: relative;
     font-size: 48px;
@@ -107,12 +110,9 @@ body {
     transition: .5s;
     color: rgb(29, 243, 29);
 }
-.bi-whatsapp:hover {
-    font-size: 60px;
-}
 
 .whatsapp {
-    color: rgb(1, 104, 1);
+    color: rgb(2, 159, 2);
 }
 
 button {
@@ -132,15 +132,9 @@ button:hover {
 }
 
 .top {
-    display: inline-flex;
-    width: 400px;
-    height: 50px;
-}
-
-.col {
-    width: 120px;
-    margin-left: 20px;
-    margin-right: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -152,5 +146,8 @@ button:hover {
         top: 40%;
         left: 50%;
         transform: translate(-50%,-50%);
+    }
+    .sher{
+        display: block !important;
     }
 }
