@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="clockcs.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="clockjq.js"></script>
-    <script src="clockja.js"></script>
   </head>
-
+  
   <body onload="clock()">
     <div class="header">
       <div class="top">
@@ -18,7 +17,9 @@
           >
         </div>
         <div class="col">
-          <button class="bi bi-circle-half" id="bt"></button>
+          <div class="Mode" id="Mode">
+            <i class="bi bi-moon-fill active" id="moon"></i>
+          </div>
         </div>
         <div class="sher">
           <a
@@ -61,4 +62,5 @@
       });
     </script>
   </body>
+  <script src="clockja.js"></script>
 </html>

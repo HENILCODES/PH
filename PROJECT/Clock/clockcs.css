@@ -29,7 +29,29 @@ body {
     margin-top: 55px;
     animation: .5s;
 }
-
+.Mode{
+    background-color: #fff;
+    width: 90px;
+    height: 40px;
+    padding: 5px 6px 0 3px;
+    text-align: left;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    margin-top: 5px;
+}
+.active{
+    transition: 0.5s;
+    text-align: right !important;
+}
+.Mode i{
+    font-size: 2rem;
+    margin: 15px 0 0 5px;
+    border-radius: 20px;
+    color: black;
+    transition: 0.5s;
+}
 .main {
     width: 400px;
     height: 280px;
@@ -87,9 +109,10 @@ body {
     font-family: sans-serif;
     padding: 10px;
     color: rgb(220, 218, 228);
-    background-color: rgb(15, 1, 141);
+    background-color: rgb(48, 34, 176);
     border-radius: 25px;
     font-size: 25px;
+    box-shadow: 0 0 10px black;
     transition: .5s;
 }
 
