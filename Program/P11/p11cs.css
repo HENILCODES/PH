@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+.Game {
+  background-color: rgb(215, 215, 215);
+  height: 217px;
+  width: 650px;
+  margin: auto;
+  border-bottom: 5px solid black;
+  overflow: hidden;
+  border-left: 2px solid black;
+}
+#deno {
+  font-size: 3.2rem;
+  position: relative;
+  top: 143px;
+  left: 15px;
+}
+.jump {
+  animation: jump 0.3s linear;
+}
+.time {
+  position: relative;
+  right: 20px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: 10px;
+  font-size: 1.5rem;
+  text-align: right;
+}
+@keyframes jump {
+  0% {
+    top: 140px;
+  }
+  30% {
+    top: 110px;
+  }
+  50% {
+    top: 70px;
+  }
+  80% {
+    top: 110px;
+  }
+  100% {
+    top: 140px;
+  }
+}
+#cactus {
+  font-size: 2.2rem;
+  position: relative;
+  top: 90px;
+  left: 580px;
+  animation: cactus 1.6s infinite linear;
+}
+@keyframes cactus {
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+kbd {
+  background-color: #eee;
+  border-radius: 5px;
+  border: 1px solid #b4b4b4;
+  white-space: nowrap;
+  line-height: 1;
+  color: rgb(66, 63, 63);
+  font-weight: bold;
+  font-size: 1em;
+  padding: 2px 4px;
+  text-align: center;
+  box-shadow: 0 1px 1px rgb(0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+}
+
+.details {
+  width: 650px;
+  margin: auto;
+  height: 300px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  display: grid;
+  align-items: center;
+}
+.gamestart{
+  text-align: center;
+  background-color: aqua;
+  position: relative;
+  top: -40%;
+  height: 100px;
+  display: grid;
+  align-items: center;
+}
+.bi-play-circle{
+  font-size: 2rem;
+}
