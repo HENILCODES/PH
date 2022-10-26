@@ -1,64 +1,66 @@
-{
-    "navbar": {
-        "home": {
-            "text": "home",
-            "url": "/"
+[
+    {
+        "navbar": {
+            "home": {
+                "text": "home",
+                "url": "/"
+            },
+            "html": {
+                "text": "HTML",
+                "url": "/html"
+            },
+            "project": {
+                "text": "project",
+                "url": "/project"
+            },
+            "about": {
+                "text": "about",
+                "url": "/about"
+            },
+            "signup": {
+                "text": "signup",
+                "url": "https://henil.rf.gd/SignUp/"
+            }
         },
-        "html": {
-            "text": "HTML",
-            "url": "/html"
+        "social": {
+            "facebook": {
+                "url": "https://www.facebook.com/henil.prajapati.376"
+            },
+            "wordpress": {
+                "url": "https://henilcode.wordpress.com/"
+            },
+            "instagram": {
+                "url": "https://www.instagram.com/henil_v_p/"
+            }
         },
         "project": {
-            "text": "project",
-            "url": "/project"
-        },
-        "about": {
-            "text": "about",
-            "url": "/about"
-        },
-        "signup": {
-            "text": "signup",
-            "url": "https://henil.rf.gd/SignUp/"
-        }
-    },
-    "social": {
-        "facebook": {
-            "url": "https://www.facebook.com/henil.prajapati.376"
-        },
-        "wordpress": {
-            "url": "https://henilcode.wordpress.com/"
-        },
-        "instagram": {
-            "url": "https://www.instagram.com/henil_v_p/"
-        }
-    },
-    "project": {
-        "number_guessing": {
-            "url": "/PROJECT/Number_Gase/"
-        },
-        "music_site": {
-            "url": "https://henilcode.rf.gd/Music/"
-        },
-        "dice_roll": {
-            "url": "/PROJECT/DiceGame/"
-        },
-        "live_chat": {
-            "url": "https://henilcode.rf.gd/Live_Chat/"
-        },
-        "stop_watch": {
-            "url": "/PROJECT/StopWatch/"
-        },
-        "digital_clock": {
-            "url": "/PROJECT/Clock/"
-        },
-        "tic_tac_toe": {
-            "url": "/PROJECT/TecToiToe/"
-        },
-        "calculater": {
-            "url": "/PROJECT/calculater/"
-        },
-        "number_string": {
-            "url": "/PROJECT/String_number/"
+            "number_guessing": {
+                "url": "/PROJECT/Number_Gase/"
+            },
+            "music_site": {
+                "url": "https://henilcode.rf.gd/Music/"
+            },
+            "dice_roll": {
+                "url": "/PROJECT/DiceGame/"
+            },
+            "live_chat": {
+                "url": "https://henilcode.rf.gd/Live_Chat/"
+            },
+            "stop_watch": {
+                "url": "/PROJECT/StopWatch/"
+            },
+            "digital_clock": {
+                "url": "/PROJECT/Clock/"
+            },
+            "tic_tac_toe": {
+                "url": "/PROJECT/TecToiToe/"
+            },
+            "calculater": {
+                "url": "/PROJECT/calculater/"
+            },
+            "number_string": {
+                "url": "/PROJECT/String_number/"
+            }
         }
     }
-}
+]
