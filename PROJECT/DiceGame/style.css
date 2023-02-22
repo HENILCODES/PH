@@ -7,7 +7,6 @@
 body {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   background-color: rgba(13, 13, 13, 0.975);
 }
@@ -42,8 +41,7 @@ body {
 }
 .main .box .detail {
   color: gold;
-  -webkit-animation: Imdetail 3s infinite;
-          animation: Imdetail 3s infinite;
+  animation: Imdetail 3s infinite;
 }
 .main .box .detail h1 {
   font-family: "Courier New", Courier, monospace;
@@ -59,18 +57,6 @@ body {
   width: 50px;
   display: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-@-webkit-keyframes Imdetail {
-  0% {
-    transform: translateY(1px);
-  }
-  50% {
-    transform: translateY(15px);
-  }
-  100% {
-    transform: translateY(1px);
-  }
 }
 
 @keyframes Imdetail {
@@ -117,22 +103,7 @@ body {
 
 .img_act {
   box-shadow: 10px 10px 40px 10px rgb(7, 226, 51);
-  -webkit-animation: cliR 0.5s infinite;
-          animation: cliR 0.5s infinite;
-}
-
-@-webkit-keyframes cliR {
-  0% {
-    box-shadow: 10px 10px 40px 10px rgb(231, 243, 12);
-    transform: scaleX(0deg);
-  }
-  50% {
-    box-shadow: 10px 10px 40px 10px rgb(200, 39, 168);
-    transform: rotate(360deg) rotate3d(1, 1, 0, 360deg) skew(30deg);
-  }
-  100% {
-    transform: scale(0deg);
-  }
+  animation: cliR 0.5s infinite;
 }
 
 @keyframes cliR {
