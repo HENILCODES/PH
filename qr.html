@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable QR Code Generator</title>
+    <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Include qr-code-styling library -->
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.min.js"></script>
+    <!-- Add custom font (e.g., Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #6EE7B7, #3B82F6);
+        }
+    </style>
+</head>
+
+<body class="gradient-bg min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-4xl w-full bg-white rounded-2xl shadow-2xl p-8">
+
+        <!-- Content Section -->
+        <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 shadow-sm">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Content</h2>
+            <input type="text" id="text" value="https://google.com/" placeholder="Enter text or URL"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+        </div>
+
+        <!-- Color Section -->
+        <div class="bg-gradient-to-r from-pink-50 to-yellow-50 p-6 shadow-sm">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Color</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Dot Color -->
+                <div class="flex flex-col">
+                    <label for="dotColor" class="text-gray-600 mb-2">Dot Color (HEX):</label>
+                    <input type="text" id="dotColor" placeholder="#000000" value="#000000"
+                        class="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                </div>
+
+                <!-- Background Color -->
+                <div class="flex flex-col">
+                    <label for="bgColor" class="text-gray-600 mb-2">Background Color (HEX):</label>
+                    <input type="text" id="bgColor" placeholder="#ffffff" value="#ffffff"
+                        class="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                </div>
+            </div>
+        </div>
+
+        <!-- Style Section -->
+        <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 shadow-sm">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Style</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Dot Style -->
+                <div class="flex flex-col">
+                    <label class="text-gray-600 mb-2">Dot Style:</label>
+                    <div class="flex gap-4">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="dotStyle" value="square" checked class="form-radio text-blue-500">
+                            Square
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="dotStyle" value="dots" class="form-radio text-blue-500">
+                            Dots
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="dotStyle" value="rounded" class="form-radio text-blue-500">
+                            Rounded
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Eye Style -->
+                <div class="flex flex-col">
+                    <label class="text-gray-600 mb-2">Eye Style:</label>
+                    <div class="flex gap-4">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="eyeStyle" value="square" checked class="form-radio text-blue-500">
+                            Square
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="eyeStyle" value="circle" class="form-radio text-blue-500">
+                            Circle
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Eye Center Style -->
+                <div class="flex flex-col col-span-2">
+                    <label class="text-gray-600 mb-2">Eye Center Style:</label>
+                    <div class="flex gap-4">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="eyeCenterStyle" value="square" checked
+                                class="form-radio text-blue-500">
+                            Square
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="eyeCenterStyle" value="circle" class="form-radio text-blue-500">
+                            Circle
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="eyeCenterStyle" value="dots" class="form-radio text-blue-500">
+                            Dots
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error Correction Level Section -->
+        <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 shadow-sm">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Error Correction Level</h2>
+            <div class="flex gap-4">
+                <label class="flex items-center gap-2">
+                    <input type="radio" name="errorCorrection" value="L" class="form-radio text-blue-500">
+                    Low (~7%)
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="radio" name="errorCorrection" value="M" checked class="form-radio text-blue-500">
+                    Medium (~15%)
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="radio" name="errorCorrection" value="Q" class="form-radio text-blue-500">
+                    Quartile (~25%)
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="radio" name="errorCorrection" value="H" class="form-radio text-blue-500">
+                    High (~30%)
+                </label>
+            </div>
+        </div>
+
+        <!-- Logo Section -->
+        <div class="bg-gradient-to-r from-yellow-50 to-red-50 p-6 shadow-sm">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Logo</h2>
+            <div class="flex flex-col gap-2">
+                <!-- Drag & Drop Card with Logo Preview -->
+                <div id="dropArea"
+                    class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-blue-500 transition-colors duration-300 bg-white relative">
+                    <input type="file" id="logoUpload" accept="image/png, image/jpeg" class="hidden">
+                    <label for="logoUpload" class="block">
+                        <!-- Default Content -->
+                        <div id="defaultContent" class="space-y-2">
+                            <svg class="w-10 h-10 mx-auto text-gray-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
+                            </svg>
+                            <p class="mt-2 text-gray-600">Drag & drop your logo here or <span
+                                    class="text-blue-500 underline">click to upload</span></p>
+                            <p class="text-sm text-gray-400">(PNG or JPG, max 5MB)</p>
+                        </div>
+                        <!-- Logo Preview -->
+                        <div id="logoPreview" class="hidden">
+                            <img id="previewImage" class="max-w-[100px] max-h-[100px] rounded-lg shadow-sm mx-auto"
+                                alt="Logo Preview">
+                            <p class="text-sm text-gray-600 mt-2">Logo uploaded successfully!</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generate Button -->
+        <button onclick="generateQRCode()"
+            class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 px-4 rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 shadow-lg">
+            Generate QR Code
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div id="qrModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full space-y-4">
+            <h2 class="text-xl font-semibold text-gray-800">Generated QR Code</h2>
+            <div id="qrcodeModal" class="flex justify-center"></div>
+            <div class="flex items-center gap-4">
+                <label for="downloadFormat" class="text-gray-600">Download Format:</label>
+                <select id="downloadFormat" class="px-4 py-2 border border-gray-300 rounded-md">
+                    <option value="png">PNG</option>
+                    <option value="jpg">JPG</option>
+                    <option value="svg">SVG</option>
+                </select>
+            </div>
+            <div class="flex justify-between">
+                <button onclick="downloadQRCode()"
+                    class="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition duration-300">
+                    Download
+                </button>
+                <button onclick="closeModal()"
+                    class="bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 transition duration-300">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize QRCodeStyling instance
+        const qrCode = new QRCodeStyling({
+            width: 300,
+            height: 300,
+            type: "canvas",
+            data: "https://example.com",
+            image: "",
+            dotsOptions: {
+                color: "#000000",
+                type: "square"
+            },
+            cornersSquareOptions: {
+                type: "square"
+            },
+            cornersDotOptions: {
+                type: "square"
+            },
+            backgroundOptions: {
+                color: "#ffffff"
+            }
+        });
+
+        // Drag & Drop Functionality
+        const dropArea = document.getElementById("dropArea");
+        const logoUpload = document.getElementById("logoUpload");
+        const defaultContent = document.getElementById("defaultContent");
+        const logoPreview = document.getElementById("logoPreview");
+        const previewImage = document.getElementById("previewImage");
+
+        // Prevent default drag behaviors
+        ["dragenter", "dragover", "dragleave", "drop"].forEach(eventName => {
+            dropArea.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        // Highlight drop area when item is dragged over
+        ["dragenter", "dragover"].forEach(eventName => {
+            dropArea.addEventListener(eventName, () => dropArea.classList.add("border-blue-500"), false);
+        });
+
+        ["dragleave", "drop"].forEach(eventName => {
+            dropArea.addEventListener(eventName, () => dropArea.classList.remove("border-blue-500"), false);
+        });
+
+        // Handle dropped files
+        dropArea.addEventListener("drop", handleDrop, false);
+        logoUpload.addEventListener("change", handleFiles, false);
+
+        function handleDrop(e) {
+            const files = e.dataTransfer.files;
+            logoUpload.files = files;
+            handleFiles();
+        }
+
+        function handleFiles() {
+            const file = logoUpload.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    previewImage.src = e.target.result;
+                    defaultContent.classList.add("hidden"); // Hide default content
+                    logoPreview.classList.remove("hidden"); // Show logo preview
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function generateQRCode() {
+            const text = document.getElementById("text").value;
+            const dotColor = document.getElementById("dotColor").value || "#000000";
+            const bgColor = document.getElementById("bgColor").value || "#ffffff";
+
+            // Get selected radio button values
+            const dotStyle = document.querySelector('input[name="dotStyle"]:checked').value;
+            const eyeStyle = document.querySelector('input[name="eyeStyle"]:checked').value;
+            const eyeCenterStyle = document.querySelector('input[name="eyeCenterStyle"]:checked').value;
+
+            // Get selected error correction level
+            const errorCorrection = document.querySelector('input[name="errorCorrection"]:checked').value;
+
+            // Get uploaded logo file
+            const logoFile = logoUpload.files[0];
+            let logoUrl = "";
+            if (logoFile) {
+                logoUrl = URL.createObjectURL(logoFile); // Convert file to object URL
+            }
+
+            if (text.trim() === "") {
+                alert("Please enter some text or URL");
+                return;
+            }
+
+            // Update QR code options based on user input
+            qrCode.update({
+                data: text,
+                dotsOptions: {
+                    color: dotColor,
+                    type: dotStyle
+                },
+                cornersSquareOptions: {
+                    type: eyeStyle
+                },
+                cornersDotOptions: {
+                    type: eyeCenterStyle
+                },
+                backgroundOptions: {
+                    color: bgColor
+                },
+                errorCorrectionLevel: errorCorrection, // Set error correction level
+                image: logoUrl // Embed logo if uploaded
+            });
+
+            // Open modal and display QR code
+            const qrcodeModal = document.getElementById("qrcodeModal");
+            qrcodeModal.innerHTML = ""; // Clear previous QR code
+            qrCode.append(qrcodeModal);
+
+            // Show modal
+            document.getElementById("qrModal").classList.remove("hidden");
+        }
+
+        function closeModal() {
+            document.getElementById("qrModal").classList.add("hidden");
+        }
+
+        function downloadQRCode() {
+            const format = document.getElementById("downloadFormat").value;
+            qrCode.download({ extension: format });
+        }
+    </script>
+
+</body>
+
+</html>
